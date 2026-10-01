@@ -1,0 +1,45 @@
+{
+  "id": "epomaker",
+  "name": "Epomaker",
+  "aliases": [
+    "Epomaker"
+  ],
+  "domains": [
+    "epomaker.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "epomaker",
+      "priority": 57.5,
+      "when": {
+        "brand_any": [
+          "^EPOMAKER$",
+          "^에포메이커$"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "epomaker.com"
+      ],
+      "url_patterns": [
+        "^https://epomaker\\.com/blogs/software/[a-z0-9-]+/?$",
+        "^https://epomaker\\.com/blogs/via-json/[a-z0-9-]+/?$"
+      ],
+      "delegated_domains": [
+        "hub.epomaker.com"
+      ],
+      "delegated_evidence_url_patterns": [
+        "^https://epomaker\\.com/blogs/(software|via-json)/[a-z0-9-]+/?$"
+      ],
+      "allow_delegated_root": true,
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

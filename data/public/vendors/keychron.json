@@ -1,0 +1,64 @@
+{
+  "id": "keychron",
+  "name": "Keychron",
+  "aliases": [
+    "Keychron",
+    "키크론"
+  ],
+  "domains": [
+    "keychron.kr",
+    "www.keychron.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://keychron.kr/launcher/"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "keychron",
+      "priority": 35,
+      "when": {
+        "brand_any": [
+          "^Keychron",
+          "키크론"
+        ],
+        "name_any": [
+          "키보드",
+          "키패드",
+          "마우스",
+          "keyboard",
+          "keypad",
+          "mouse"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "keychron.kr",
+        "www.keychron.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "keychron-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "keychron-software",
+      "name": "keychron",
+      "canonical_page": "https://keychron.kr/launcher/",
+      "support_mode": "family-rule",
+      "rule_id": "keychron",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://keychron.kr/launcher/"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

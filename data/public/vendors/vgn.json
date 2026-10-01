@@ -1,0 +1,34 @@
+{
+  "id": "vgn",
+  "name": "VGN",
+  "aliases": [
+    "VGN"
+  ],
+  "domains": [
+    "vgnlab.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://vgnlab.com/pages/download"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "vgn-support",
+      "priority": 500,
+      "when": {
+        "brand_any": [
+          "^vgn$"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "vgnlab.com"
+      ]
+    }
+  ],
+  "ecosystems": []
+}

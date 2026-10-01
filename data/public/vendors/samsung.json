@@ -1,0 +1,83 @@
+{
+  "id": "samsung",
+  "name": "Samsung",
+  "aliases": [
+    "Samsung",
+    "삼성전자"
+  ],
+  "domains": [
+    "semiconductor.samsung.com",
+    "www.samsung.com",
+    "www.samsungsvc.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://semiconductor.samsung.com/kr/consumer-storage/magician/"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "samsung-ssd-magician",
+      "priority": 39,
+      "when": {
+        "brand_any": [
+          "삼성전자",
+          "^Samsung"
+        ],
+        "name_any": [
+          "\\bSSD\\b",
+          "\\bNVMe\\b",
+          "\\b9\\d{2}\\s?(PRO|EVO)\\b",
+          "\\b8\\d{2}\\s?(PRO|EVO|QVO)\\b"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "semiconductor.samsung.com",
+        "www.samsung.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "samsung-ssd-magician-software"
+    },
+    {
+      "id": "samsung-printer",
+      "priority": 41,
+      "when": {
+        "brand_any": [
+          "삼성전자",
+          "^Samsung"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.samsung.com",
+        "www.samsungsvc.co.kr"
+      ],
+      "url_patterns": [
+        "^https://www\\.samsung\\.com/sec/support/model/[A-Z0-9-]+/?$",
+        "^https://www\\.samsungsvc\\.co\\.kr/download/view\\?code=[A-Z0-9-]+(?:&.*)?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "samsung-ssd-magician-software",
+      "name": "samsung-ssd-magician",
+      "canonical_page": "https://semiconductor.samsung.com/kr/consumer-storage/magician/",
+      "support_mode": "family-rule",
+      "rule_id": "samsung-ssd-magician",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://semiconductor.samsung.com/kr/consumer-storage/magician/"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

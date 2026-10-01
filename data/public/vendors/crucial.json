@@ -1,0 +1,63 @@
+{
+  "id": "crucial",
+  "name": "Crucial",
+  "aliases": [
+    "Crucial",
+    "Micron",
+    "마이크론"
+  ],
+  "domains": [
+    "www.crucial.com",
+    "www.crucial.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.crucial.com/support/storage-executive"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "crucial-storage-executive",
+      "priority": 49,
+      "when": {
+        "brand_any": [
+          "^Crucial",
+          "크루셜",
+          "^Micron",
+          "마이크론"
+        ],
+        "name_any": [
+          "\\bSSD\\b",
+          "\\bNVMe\\b"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.crucial.com",
+        "www.crucial.kr"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "crucial-storage-executive-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "crucial-storage-executive-software",
+      "name": "crucial-storage-executive",
+      "canonical_page": "https://www.crucial.com/support/storage-executive",
+      "support_mode": "family-rule",
+      "rule_id": "crucial-storage-executive",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.crucial.com/support/storage-executive"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

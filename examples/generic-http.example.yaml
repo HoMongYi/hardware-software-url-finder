@@ -1,0 +1,9 @@
+version: 1
+name: generic-research
+search:
+  provider: generic-http
+  candidate_limit_after_scoring: 5
+judge:
+  provider: generic-http
+audit:
+  final_core_audit_required: true

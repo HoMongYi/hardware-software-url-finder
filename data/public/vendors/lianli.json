@@ -1,0 +1,59 @@
+{
+  "id": "lianli",
+  "name": "LIAN-LI",
+  "aliases": [
+    "LIAN-LI",
+    "LIAN LI",
+    "리안리"
+  ],
+  "domains": [
+    "lian-li.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://lian-li.com/ko/l-connect3/"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "lianli-lconnect3",
+      "priority": 54.5,
+      "when": {
+        "brand_any": [
+          "^LIAN-LI$",
+          "^LIAN LI$",
+          "^리안리$"
+        ],
+        "name_any": [
+          "HYDROSHIFT\\s*II.*(OLED|LCD)"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "lian-li.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "lianli-lconnect3-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "lianli-lconnect3-software",
+      "name": "lianli-lconnect3",
+      "canonical_page": "https://lian-li.com/ko/l-connect3/",
+      "support_mode": "family-rule",
+      "rule_id": "lianli-lconnect3",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://lian-li.com/ko/l-connect3/"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

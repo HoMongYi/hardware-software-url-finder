@@ -1,0 +1,17 @@
+positive:
+  official_domain: 35
+  exact_model: 30
+  support_or_download_page: 15
+  known_software_ecosystem: 12
+  vendor_model_token_match: 10
+  preferred_locale: 3
+negative:
+  generic_download_center: -12
+  model_not_visible: -18
+  suspicious_redirect: -25
+hard_reject:
+  marketplace: true
+  community: true
+  wrong_revision: true
+  direct_file: true
+  unofficial_mirror: true

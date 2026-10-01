@@ -1,0 +1,98 @@
+{
+  "id": "asus",
+  "name": "ASUS",
+  "aliases": [
+    "ASUS"
+  ],
+  "domains": [
+    "rog.asus.com",
+    "servers.asus.com",
+    "tinker-board.asus.com",
+    "www.asus.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [
+    {
+      "id": "asus-prime-a520m-k-argb",
+      "model": "PRIME A520M-K ARGB",
+      "canonical_page": "https://www.asus.com/motherboards-components/motherboards/prime/prime-a520m-k-argb/helpdesk_download?model2Name=PRIME-A520M-K-ARGB",
+      "status": "active",
+      "verified_at": "2026-10-01",
+      "provenance": [
+        "https://www.asus.com/motherboards-components/motherboards/prime/prime-a520m-k-argb/helpdesk_download?model2Name=PRIME-A520M-K-ARGB"
+      ],
+      "support_mode": "exact",
+      "supported_models": [
+        "PRIME A520M-K ARGB"
+      ],
+      "excluded_models": [],
+      "software_kind": "support"
+    }
+  ],
+  "rules": [
+    {
+      "id": "asus-rog-motherboard",
+      "priority": 20,
+      "when": {
+        "brand_any": [
+          "^ASUS"
+        ],
+        "name_any": [
+          "\\bROG\\b"
+        ],
+        "name_none": [
+          "지포스",
+          "GeForce",
+          "RTX",
+          "GTX",
+          "라데온"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "rog.asus.com",
+        "www.asus.com"
+      ],
+      "url_patterns": [
+        "^https://rog\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk(?:_download)?/?(?:\\?.*)?$",
+        "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk_download/?(?:\\?.*)?$",
+        "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?supportonly/[^?#]+/helpdesk_download/?(?:\\?.*)?$"
+      ],
+      "allow_hub": false
+    },
+    {
+      "id": "asus-general",
+      "priority": 21,
+      "when": {
+        "brand_any": [
+          "^ASUS"
+        ],
+        "name_none": [
+          "지포스",
+          "GeForce",
+          "RTX",
+          "GTX",
+          "라데온"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.asus.com",
+        "rog.asus.com",
+        "servers.asus.com",
+        "tinker-board.asus.com"
+      ],
+      "url_patterns": [
+        "^https://rog\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk(?:_download)?/?(?:\\?.*)?$",
+        "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk_download/?(?:\\?.*)?$",
+        "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?supportonly/[^?#]+/helpdesk_download/?(?:\\?.*)?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

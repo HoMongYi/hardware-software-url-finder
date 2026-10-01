@@ -1,0 +1,37 @@
+{
+  "id": "sindoh",
+  "name": "Sindoh",
+  "aliases": [
+    "Sindoh"
+  ],
+  "domains": [
+    "www.sindoh.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "sindoh",
+      "priority": 65,
+      "when": {
+        "brand_any": [
+          "신도리코",
+          "^SINDOH"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.sindoh.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.sindoh\\.com/support/download/.+"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

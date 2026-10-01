@@ -1,0 +1,6 @@
+export function fixtureVendor() {
+  return { id:'example', name:'Example', aliases:['Example'], domains:['example.com'], classification:'SYNTHETIC', provenance:['https://example.com/support'], verified_at:'2026-10-01', noise_tokens:['Black','White'], model_aliases:[{from:'LOCAL V2',to:'ABC V2',status:'confirmed',provenance:['https://example.com/support/abc-v2']}], rules:[], models:[{id:'example-abc-v2',model:'ABC V2',canonical_page:'https://example.com/support/abc-v2',status:'active',verified_at:'2026-10-01',provenance:['https://example.com/support/abc-v2'],support_mode:'exact',supported_models:['ABC V2'],excluded_models:[],software_kind:'device_config'}], ecosystems:[] };
+}
+export function fixtureRegistry(vendor = fixtureVendor()) { return { vendors:[vendor],privateVendors:[],markers:[],passive:{exclude:[],exceptions:[]} }; }
+export const input = (name='[Example] ABC V2',id='synthetic-1') => ({ input_id:id,product_name:name });
+export const page = (model='ABC V2',url='https://example.com/support/abc-v2') => ({status:200,url,redirects:[],title:model+' Support',text:model+' official driver downloads and firmware',content_type:'text/html',content_disposition:'',links:[],verified_at:'2026-10-01',browser_required:false});

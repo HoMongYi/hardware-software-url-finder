@@ -1,0 +1,252 @@
+{
+  "exclude": [
+    {
+      "id": "keycap",
+      "patterns": [
+        "키\\s?캡",
+        "keycap",
+        "\\bPBT\\s?키캡",
+        "키캡\\s?세트",
+        "아티산"
+      ]
+    },
+    {
+      "id": "palmrest",
+      "patterns": [
+        "팜\\s?레스트",
+        "palm\\s?rest",
+        "손목\\s?받침",
+        "리스트\\s?레스트",
+        "wrist\\s?rest"
+      ]
+    },
+    {
+      "id": "mousepad",
+      "patterns": [
+        "마우스\\s?패드",
+        "mouse\\s?pad",
+        "데스크\\s?패드",
+        "장패드"
+      ]
+    },
+    {
+      "id": "switch-lube",
+      "patterns": [
+        "(?:교체용\\s*)?(?:기계식\\s*)?스위치(?:\\s|,|$)",
+        "스위치\\s*\\d+\\s*(?:개|pcs?)\\b",
+        "\\d+\\s*pcs?\\b.*스위치",
+        "축\\s?교체용",
+        "윤활(?:유|제|키트)?",
+        "\\b(?:lube|lubricant)\\b",
+        "루브\\s?(스테이션|키트)",
+        "스태빌라이저",
+        "보강판\\s?(단품)?",
+        "가스켓\\s?폼\\s?단품",
+        "흡음재\\s?단품"
+      ]
+    },
+    {
+      "id": "mouse-feet",
+      "patterns": [
+        "마우스\\s?피트",
+        "\\bmouse\\s?(feet|skate)",
+        "테프론\\s?피트",
+        "PTFE\\s?피트",
+        "글라이드\\s?패드",
+        "그립\\s?테이프",
+        "마우스\\s?번지"
+      ]
+    },
+    {
+      "id": "bare-drive",
+      "patterns": [
+        "하드디스크",
+        "내장\\s?하드",
+        "\\bHDD\\b",
+        "\\bHAT\\d{4}\\b",
+        "IronWolf",
+        "아이언울프",
+        "\\bWD\\s?Red\\b",
+        "\\bExos\\b",
+        "SkyHawk",
+        "Surveillance",
+        "BarraCuda",
+        "바라쿠다"
+      ]
+    },
+    {
+      "id": "cable-gender",
+      "patterns": [
+        "케이블(?!\\s?모뎀)",
+        "젠더",
+        "컨버터\\s?젠더",
+        "연장선",
+        "\\bC\\s?TO\\s?C\\b",
+        "HDMI\\s?선",
+        "DP\\s?선",
+        "파워\\s?서플라이\\s?케이블",
+        "라이저\\s?케이블",
+        "슬리빙"
+      ]
+    },
+    {
+      "id": "case-bracket",
+      "patterns": [
+        "모니터\\s?암",
+        "거치대",
+        "브라(켓|킷)",
+        "\\bVESA\\b",
+        "받침대",
+        "쿨링\\s?스탠드",
+        "랙\\s?마운트",
+        "가이드\\s?레일"
+      ]
+    },
+    {
+      "id": "thermal-clean",
+      "patterns": [
+        "서멀",
+        "써멀",
+        "thermal\\s?(grease|paste)",
+        "청소",
+        "먼지\\s?필터",
+        "방진",
+        "무수\\s?알코올",
+        "에어\\s?블로워"
+      ]
+    },
+    {
+      "id": "passive-power",
+      "patterns": [
+        "파워\\s?분배",
+        "\\bATX\\s?변환",
+        "듀얼\\s?파워",
+        "전원\\s?분배",
+        "\\bPCIe?\\s?변환\\s?아답터"
+      ]
+    },
+    {
+      "id": "passive-cooling",
+      "patterns": [
+        "기본\\s?쿨러",
+        "히트\\s?싱크",
+        "\\bM\\.2\\s?방열판",
+        "방열판"
+      ]
+    },
+    {
+      "id": "consumable",
+      "patterns": [
+        "^\\s*\\[[^\\]]*\\]\\s*(정품)?\\s*(토너|잉크|드럼|리본)\\b",
+        "재생\\s?토너",
+        "무한잉크\\s?리필",
+        "인화지",
+        "\\bA4\\s?용지"
+      ]
+    },
+    {
+      "id": "bare-media",
+      "patterns": [
+        "\\bSD\\s?카드",
+        "마이크로\\s?SD",
+        "\\bUSB\\s?메모리",
+        "공\\s?시디",
+        "\\bDVD-R\\b"
+      ]
+    },
+    {
+      "id": "furniture-misc",
+      "patterns": [
+        "의자",
+        "책상",
+        "정리함",
+        "가방",
+        "파우치",
+        "스티커",
+        "필름",
+        "보호\\s?커버",
+        "키스킨"
+      ]
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "is-primary-device",
+      "patterns": [
+        "키보드",
+        "마우스(?!\\s?패드)",
+        "프린터",
+        "복합기",
+        "스캐너",
+        "메인보드",
+        "그래픽\\s?카드",
+        "지포스",
+        "GeForce",
+        "라데온",
+        "Radeon",
+        "헤드셋",
+        "웹캠",
+        "공유기",
+        "\\bSSD\\b",
+        "\\bNVMe\\b",
+        "게임패드",
+        "스티어링",
+        "모니터(?!\\s?암)",
+        "허브\\s?컨트롤러",
+        "캡처\\s?보드",
+        "도킹\\s?스테이션"
+      ],
+      "applies_to": [
+        "palmrest",
+        "switch-lube",
+        "thermal-clean",
+        "mousepad",
+        "passive-cooling",
+        "furniture-misc",
+        "consumable",
+        "bare-media",
+        "passive-power"
+      ]
+    },
+    {
+      "id": "ssd-or-nas-body",
+      "patterns": [
+        "\\bSSD\\b",
+        "\\bNVMe\\b",
+        "\\bNAS\\b\\s?(본체|스토리지|서버)",
+        "베이\\s?NAS",
+        "DiskStation",
+        "\\bDS\\d{3,4}\\b",
+        "\\bRS\\d{3,4}\\b"
+      ],
+      "applies_to": [
+        "bare-drive",
+        "bare-media"
+      ]
+    },
+    {
+      "id": "rgb-or-firmware-accessory",
+      "patterns": [
+        "ARGB",
+        "\\bRGB\\b",
+        "LCD",
+        "무선\\s?충전",
+        "펌웨어",
+        "\\bOLED\\b",
+        "\\bhub\\b\\s?컨트롤러",
+        "컨트롤러\\s?포함"
+      ]
+    },
+    {
+      "id": "programmable-input",
+      "patterns": [
+        "매크로",
+        "\\bQMK\\b",
+        "\\bVIA\\b",
+        "프로그래머블",
+        "\\bDPI\\b\\s?조절",
+        "폴링\\s?레이트"
+      ]
+    }
+  ]
+}

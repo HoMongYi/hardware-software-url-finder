@@ -1,0 +1,42 @@
+{
+  "id": "maxsun",
+  "name": "Maxsun",
+  "aliases": [
+    "Maxsun"
+  ],
+  "domains": [
+    "www.maxsun.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "maxsun",
+      "priority": 62,
+      "when": {
+        "brand_any": [
+          "^MAXSUN"
+        ],
+        "name_none": [
+          "지포스",
+          "GeForce",
+          "RTX",
+          "라데온"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.maxsun.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.maxsun\\.com/ko/products/.+"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

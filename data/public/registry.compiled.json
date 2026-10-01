@@ -1,0 +1,2710 @@
+{
+  "version": "0.1.0",
+  "vendors": [
+    {
+      "id": "3dconnexion",
+      "name": "3Dconnexion",
+      "aliases": [
+        "3Dconnexion"
+      ],
+      "domains": [
+        "3dconnexion.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://3dconnexion.com/kr/drivers-application/3dxware-10/"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "3dconnexion",
+          "priority": 57,
+          "when": {
+            "brand_any": [
+              "3DCONNEXION"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "3dconnexion.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "3dconnexion-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "3dconnexion-software",
+          "name": "3dconnexion",
+          "canonical_page": "https://3dconnexion.com/kr/drivers-application/3dxware-10/",
+          "support_mode": "family-rule",
+          "rule_id": "3dconnexion",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://3dconnexion.com/kr/drivers-application/3dxware-10/"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "abko",
+      "name": "ABKO",
+      "aliases": [
+        "ABKO",
+        "앱코"
+      ],
+      "domains": [
+        "ncore.co.kr",
+        "www.abko.co.kr",
+        "www.corsair.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "abko-ncore",
+          "priority": 50,
+          "when": {
+            "brand_any": [
+              "^ABKO",
+              "앱코"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "ncore.co.kr",
+            "www.abko.co.kr",
+            "www.corsair.com"
+          ],
+          "url_patterns": [
+            "^https://ncore\\.co\\.kr/bbs/data\\.php"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "akko",
+      "name": "AKKO",
+      "aliases": [
+        "AKKO"
+      ],
+      "domains": [
+        "en.akkogear.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://en.akkogear.com/download/"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "akko-support",
+          "priority": 500,
+          "when": {
+            "brand_any": [
+              "^akko$"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "en.akkogear.com"
+          ]
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "amd",
+      "name": "AMD",
+      "aliases": [
+        "AMD"
+      ],
+      "domains": [
+        "www.amd.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "amd-radeon-gpu",
+          "priority": 13,
+          "when": {
+            "name_any": [
+              "라데온",
+              "Radeon",
+              "\\bRX\\s?\\d{3,4}\\b"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.amd.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.amd\\.com/(ko|en)/support/downloads/(drivers|previous-drivers)\\.html/graphics/.+\\.html$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "asrock",
+      "name": "ASRock",
+      "aliases": [
+        "ASRock"
+      ],
+      "domains": [
+        "asrock.com",
+        "asrockind.com",
+        "asrockrack.com",
+        "pg.asrock.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "asrock-motherboard",
+          "priority": 22,
+          "when": {
+            "brand_any": [
+              "^ASRock"
+            ],
+            "name_none": [
+              "지포스",
+              "GeForce",
+              "RTX",
+              "라데온",
+              "Radeon"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "asrock.com",
+            "pg.asrock.com",
+            "asrockrack.com",
+            "asrockind.com"
+          ],
+          "url_patterns": [
+            "^https://(www\\.|pg\\.)?asrock\\.com/[Mm][Bb]/(Intel|AMD)/.+/index(\\.kr)?\\.asp(#Download)?$"
+          ],
+          "forbid_url_regex": [
+            "download\\.asrock\\.com/Manual"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "asus",
+      "name": "ASUS",
+      "aliases": [
+        "ASUS"
+      ],
+      "domains": [
+        "rog.asus.com",
+        "servers.asus.com",
+        "tinker-board.asus.com",
+        "www.asus.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [
+        {
+          "id": "asus-prime-a520m-k-argb",
+          "model": "PRIME A520M-K ARGB",
+          "canonical_page": "https://www.asus.com/motherboards-components/motherboards/prime/prime-a520m-k-argb/helpdesk_download?model2Name=PRIME-A520M-K-ARGB",
+          "status": "active",
+          "verified_at": "2026-10-01",
+          "provenance": [
+            "https://www.asus.com/motherboards-components/motherboards/prime/prime-a520m-k-argb/helpdesk_download?model2Name=PRIME-A520M-K-ARGB"
+          ],
+          "support_mode": "exact",
+          "supported_models": [
+            "PRIME A520M-K ARGB"
+          ],
+          "excluded_models": [],
+          "software_kind": "support"
+        }
+      ],
+      "rules": [
+        {
+          "id": "asus-rog-motherboard",
+          "priority": 20,
+          "when": {
+            "brand_any": [
+              "^ASUS"
+            ],
+            "name_any": [
+              "\\bROG\\b"
+            ],
+            "name_none": [
+              "지포스",
+              "GeForce",
+              "RTX",
+              "GTX",
+              "라데온"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "rog.asus.com",
+            "www.asus.com"
+          ],
+          "url_patterns": [
+            "^https://rog\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk(?:_download)?/?(?:\\?.*)?$",
+            "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk_download/?(?:\\?.*)?$",
+            "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?supportonly/[^?#]+/helpdesk_download/?(?:\\?.*)?$"
+          ],
+          "allow_hub": false
+        },
+        {
+          "id": "asus-general",
+          "priority": 21,
+          "when": {
+            "brand_any": [
+              "^ASUS"
+            ],
+            "name_none": [
+              "지포스",
+              "GeForce",
+              "RTX",
+              "GTX",
+              "라데온"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.asus.com",
+            "rog.asus.com",
+            "servers.asus.com",
+            "tinker-board.asus.com"
+          ],
+          "url_patterns": [
+            "^https://rog\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk(?:_download)?/?(?:\\?.*)?$",
+            "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?[^?#]+/helpdesk_download/?(?:\\?.*)?$",
+            "^https://www\\.asus\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?supportonly/[^?#]+/helpdesk_download/?(?:\\?.*)?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "aula",
+      "name": "AULA",
+      "aliases": [
+        "AULA",
+        "독거미"
+      ],
+      "domains": [
+        "aulakeyboard.com",
+        "funkeys.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "aula",
+          "priority": 51,
+          "when": {
+            "brand_any": [
+              "^AULA",
+              "^독거미"
+            ],
+            "name_any": [
+              "."
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "aulakeyboard.com",
+            "funkeys.co.kr"
+          ],
+          "url_patterns": [
+            "^https://aulakeyboard\\.com/ko/download/.+",
+            "^https://funkeys\\.co\\.kr/bbs/board\\.php\\?(?=[^#]*bo_table=download(?:&|$))[^#]*wr_id=\\d+(?:&.*)?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "biostar",
+      "name": "Biostar",
+      "aliases": [
+        "Biostar"
+      ],
+      "domains": [
+        "www.biostar-europe.com",
+        "www.biostar.com.tw"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "biostar",
+          "priority": 61,
+          "when": {
+            "brand_any": [
+              "^BIOSTAR"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.biostar.com.tw",
+            "www.biostar-europe.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.biostar\\.com\\.tw/app/(kr|en)/mb/introduction\\.php\\?S_ID=\\d+"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "brother",
+      "name": "Brother",
+      "aliases": [
+        "Brother"
+      ],
+      "domains": [
+        "support.brother.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "brother-printer",
+          "priority": 41.5,
+          "when": {
+            "brand_any": [
+              "^Brother$",
+              "^브라더$"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "support.brother.com"
+          ],
+          "url_patterns": [
+            "^https://support\\.brother\\.com/g/b/downloadtop\\.aspx\\?[^#]*prod=[a-z0-9_]+(?:&.*)?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "canon",
+      "name": "Canon",
+      "aliases": [
+        "Canon",
+        "캐논"
+      ],
+      "domains": [
+        "asia.canon"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [
+        {
+          "id": "canon-pixma-e3470",
+          "model": "PIXMA E3470",
+          "canonical_page": "https://asia.canon/en/support/PIXMA%20E3470/model",
+          "status": "active",
+          "verified_at": "2026-10-01",
+          "provenance": [
+            "https://asia.canon/en/support/PIXMA%20E3470/model"
+          ],
+          "support_mode": "exact",
+          "supported_models": [
+            "PIXMA E3470"
+          ],
+          "excluded_models": [],
+          "software_kind": "support"
+        }
+      ],
+      "rules": [
+        {
+          "id": "canon-printer",
+          "priority": 42,
+          "when": {
+            "brand_any": [
+              "^Canon",
+              "캐논"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "asia.canon"
+          ],
+          "url_patterns": [
+            "^https://asia\\.canon/en/support/.+/model$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "cherry",
+      "name": "Cherry",
+      "aliases": [
+        "Cherry"
+      ],
+      "domains": [
+        "www.cherry.de"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.cherry.de/ko-kr/제품/소프트웨어-및-서비스/cherry-utility"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "cherry",
+          "priority": 38,
+          "when": {
+            "brand_any": [
+              "^Cherry",
+              "체리"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.cherry.de"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "cherry-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "cherry-software",
+          "name": "cherry",
+          "canonical_page": "https://www.cherry.de/ko-kr/제품/소프트웨어-및-서비스/cherry-utility",
+          "support_mode": "family-rule",
+          "rule_id": "cherry",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.cherry.de/ko-kr/제품/소프트웨어-및-서비스/cherry-utility"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "coolermaster",
+      "name": "Cooler Master",
+      "aliases": [
+        "Cooler Master",
+        "쿨러마스터",
+        "COOLERMASTER"
+      ],
+      "domains": [
+        "coolermaster.com",
+        "legacy.coolermaster.com",
+        "www.coolermaster.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.coolermaster.com/ko-kr/masterctrl.html"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "coolermaster-masterctrl",
+          "priority": 37,
+          "when": {
+            "brand_any": [
+              "쿨러마스터",
+              "^Cooler\\s?Master",
+              "^COOLERMASTER"
+            ],
+            "name_any": [
+              "ATMOS\\s?II.*(?:LCD|Pixel\\s?LED|PIXEL)"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.coolermaster.com",
+            "coolermaster.com",
+            "legacy.coolermaster.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "coolermaster-masterctrl-software"
+        },
+        {
+          "id": "coolermaster-review",
+          "priority": 37.5,
+          "when": {
+            "brand_any": [
+              "쿨러마스터",
+              "^Cooler\\s?Master",
+              "^COOLERMASTER"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.coolermaster.com",
+            "coolermaster.com",
+            "legacy.coolermaster.com"
+          ],
+          "url_patterns": [
+            "^https://(?:www\\.)?coolermaster\\.com/(?:ko-kr|en-global)/(?:products|masterplus|masterctrl).+",
+            "^https://legacy\\.coolermaster\\.com/(?:ko-kr|en-global)/(?:products|masterplus|masterctrl).+"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "coolermaster-masterctrl-software",
+          "name": "coolermaster-masterctrl",
+          "canonical_page": "https://www.coolermaster.com/ko-kr/masterctrl.html",
+          "support_mode": "family-rule",
+          "rule_id": "coolermaster-masterctrl",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.coolermaster.com/ko-kr/masterctrl.html"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "corsair",
+      "name": "Corsair",
+      "aliases": [
+        "Corsair"
+      ],
+      "domains": [
+        "www.corsair.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.corsair.com/kr/ko/s/downloads",
+        "https://www.corsair.com/kr/ko/s/icue"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "corsair-icue-device",
+          "priority": 33,
+          "when": {
+            "name_any": [
+              "iCUE",
+              "\\bICUE\\b"
+            ],
+            "brand_any": [
+              "^CORSAIR",
+              "커세어"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.corsair.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "corsair-icue-device-software"
+        },
+        {
+          "id": "corsair-general",
+          "priority": 34,
+          "when": {
+            "brand_any": [
+              "^CORSAIR",
+              "커세어"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.corsair.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "corsair-general-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "corsair-icue-device-software",
+          "name": "corsair-icue-device",
+          "canonical_page": "https://www.corsair.com/kr/ko/s/icue",
+          "support_mode": "family-rule",
+          "rule_id": "corsair-icue-device",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.corsair.com/kr/ko/s/icue"
+          ],
+          "software_kind": "utility"
+        },
+        {
+          "id": "corsair-general-software",
+          "name": "corsair-general",
+          "canonical_page": "https://www.corsair.com/kr/ko/s/downloads",
+          "support_mode": "family-rule",
+          "rule_id": "corsair-general",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.corsair.com/kr/ko/s/downloads"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "cox",
+      "name": "COX",
+      "aliases": [
+        "COX"
+      ],
+      "domains": [
+        "www.coxenc.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.coxenc.co.kr/support/download.php"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "cox",
+          "priority": 53,
+          "when": {
+            "brand_any": [
+              "^COX"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.coxenc.co.kr"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "cox-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "cox-software",
+          "name": "cox",
+          "canonical_page": "https://www.coxenc.co.kr/support/download.php",
+          "support_mode": "family-rule",
+          "rule_id": "cox",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.coxenc.co.kr/support/download.php"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "crucial",
+      "name": "Crucial",
+      "aliases": [
+        "Crucial",
+        "Micron",
+        "마이크론"
+      ],
+      "domains": [
+        "www.crucial.com",
+        "www.crucial.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.crucial.com/support/storage-executive"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "crucial-storage-executive",
+          "priority": 49,
+          "when": {
+            "brand_any": [
+              "^Crucial",
+              "크루셜",
+              "^Micron",
+              "마이크론"
+            ],
+            "name_any": [
+              "\\bSSD\\b",
+              "\\bNVMe\\b"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.crucial.com",
+            "www.crucial.kr"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "crucial-storage-executive-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "crucial-storage-executive-software",
+          "name": "crucial-storage-executive",
+          "canonical_page": "https://www.crucial.com/support/storage-executive",
+          "support_mode": "family-rule",
+          "rule_id": "crucial-storage-executive",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.crucial.com/support/storage-executive"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "deck",
+      "name": "Deck",
+      "aliases": [
+        "Deck"
+      ],
+      "domains": [
+        "deckkeyboards.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "http://deckkeyboards.co.kr/board/list.php?bdId=firmware"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "deck-keyboards",
+          "priority": 52,
+          "when": {
+            "brand_any": [
+              "^Deck"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "deckkeyboards.co.kr"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "deck-keyboards-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "deck-keyboards-software",
+          "name": "deck-keyboards",
+          "canonical_page": "http://deckkeyboards.co.kr/board/list.php?bdId=firmware",
+          "support_mode": "family-rule",
+          "rule_id": "deck-keyboards",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "http://deckkeyboards.co.kr/board/list.php?bdId=firmware"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "deepcool",
+      "name": "DeepCool",
+      "aliases": [
+        "DeepCool"
+      ],
+      "domains": [
+        "kr.deepcool.com",
+        "www.deepcool.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://kr.deepcool.com/downloadpage/"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "deepcool",
+          "priority": 55,
+          "when": {
+            "brand_any": [
+              "^DEEPCOOL",
+              "딥쿨"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "kr.deepcool.com",
+            "www.deepcool.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "deepcool-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "deepcool-software",
+          "name": "deepcool",
+          "canonical_page": "https://kr.deepcool.com/downloadpage/",
+          "support_mode": "family-rule",
+          "rule_id": "deepcool",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://kr.deepcool.com/downloadpage/"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "dell",
+      "name": "Dell",
+      "aliases": [
+        "Dell"
+      ],
+      "domains": [
+        "www.dell.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "dell-peripheral",
+          "priority": 63,
+          "when": {
+            "brand_any": [
+              "^Dell",
+              "델\\b"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.dell.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.dell\\.com/support/.+/drivers$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "durgod",
+      "name": "Durgod",
+      "aliases": [
+        "Durgod"
+      ],
+      "domains": [
+        "www.durgod.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.durgod.com/softwares/"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "durgod",
+          "priority": 54,
+          "when": {
+            "brand_any": [
+              "^DURGOD",
+              "듀가드"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.durgod.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "durgod-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "durgod-software",
+          "name": "durgod",
+          "canonical_page": "https://www.durgod.com/softwares/",
+          "support_mode": "family-rule",
+          "rule_id": "durgod",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.durgod.com/softwares/"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "ecs",
+      "name": "ECS",
+      "aliases": [
+        "ECS"
+      ],
+      "domains": [
+        "www.ecs.com.tw"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "ecs",
+          "priority": 60,
+          "when": {
+            "brand_any": [
+              "^ECS"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.ecs.com.tw"
+          ],
+          "url_patterns": [
+            "^https://www\\.ecs\\.com\\.tw/(kr|en)/Product/Motherboard/[^/]+/download$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "epomaker",
+      "name": "Epomaker",
+      "aliases": [
+        "Epomaker"
+      ],
+      "domains": [
+        "epomaker.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "epomaker",
+          "priority": 57.5,
+          "when": {
+            "brand_any": [
+              "^EPOMAKER$",
+              "^에포메이커$"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "epomaker.com"
+          ],
+          "url_patterns": [
+            "^https://epomaker\\.com/blogs/software/[a-z0-9-]+/?$",
+            "^https://epomaker\\.com/blogs/via-json/[a-z0-9-]+/?$"
+          ],
+          "delegated_domains": [
+            "hub.epomaker.com"
+          ],
+          "delegated_evidence_url_patterns": [
+            "^https://epomaker\\.com/blogs/(software|via-json)/[a-z0-9-]+/?$"
+          ],
+          "allow_delegated_root": true,
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "epson",
+      "name": "Epson",
+      "aliases": [
+        "Epson",
+        "엡손"
+      ],
+      "domains": [
+        "epson.com",
+        "support.epson.net",
+        "www.epson.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "epson-printer",
+          "priority": 43,
+          "when": {
+            "brand_any": [
+              "^EPSON",
+              "엡손"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.epson.co.kr",
+            "epson.com",
+            "support.epson.net"
+          ],
+          "url_patterns": [
+            "^https://www\\.epson\\.co\\.kr/.+",
+            "^https://support\\.epson\\.net/setupnavi/\\?[^#]*MKN=[A-Z0-9-]+[^#]*$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "fl-esports",
+      "name": "FL-ESPORTS",
+      "aliases": [
+        "FL-ESPORTS",
+        "FLESPORTS",
+        "FL ESPORTS"
+      ],
+      "domains": [
+        "funkeys.co.kr",
+        "www.flesports.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "fl-esports",
+          "priority": 50.5,
+          "when": {
+            "brand_any": [
+              "^FL-ESPORTS$",
+              "^FLESPORTS$",
+              "^FL ESPORTS$"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "funkeys.co.kr",
+            "www.flesports.com"
+          ],
+          "url_patterns": [
+            "^https://funkeys\\.co\\.kr/bbs/board\\.php\\?(?=[^#]*bo_table=download(?:&|$))[^#]*wr_id=\\d+(?:&.*)?$",
+            "^https://www\\.flesports\\.com/index\\.php/home/(support|webconsole)/?$"
+          ],
+          "delegated_domains": [
+            "qmk.top"
+          ],
+          "delegated_evidence_url_patterns": [
+            "^https://funkeys\\.co\\.kr/bbs/board\\.php\\?(?=[^#]*bo_table=download(?:&|$))[^#]*wr_id=\\d+(?:&.*)?$"
+          ],
+          "allow_delegated_root": true,
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "gigabyte",
+      "name": "GIGABYTE",
+      "aliases": [
+        "GIGABYTE"
+      ],
+      "domains": [
+        "www.gigabyte.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "gigabyte-motherboard",
+          "priority": 23,
+          "when": {
+            "brand_any": [
+              "^GIGABYTE",
+              "^AORUS"
+            ],
+            "name_none": [
+              "지포스",
+              "GeForce",
+              "RTX",
+              "라데온",
+              "Radeon"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.gigabyte.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.gigabyte\\.com/(kr/)?[A-Za-z-]+/.+/support(#Support-Driver)?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "hansung",
+      "name": "Hansung",
+      "aliases": [
+        "Hansung",
+        "한성컴퓨터"
+      ],
+      "domains": [
+        "www.superstore.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "hansung",
+          "priority": 59,
+          "when": {
+            "brand_any": [
+              "한성컴퓨터",
+              "^HANSUNG"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.superstore.co.kr"
+          ],
+          "url_patterns": [
+            "^https://www\\.superstore\\.co\\.kr/customer_center/read\\.html\\?.*"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "hp",
+      "name": "HP",
+      "aliases": [
+        "HP",
+        "HP"
+      ],
+      "domains": [
+        "support.hp.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "hp-printer-and-device",
+          "priority": 40,
+          "when": {
+            "brand_any": [
+              "^HP"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "support.hp.com"
+          ],
+          "url_patterns": [
+            "^https://support\\.hp\\.com/kr-ko/drivers/[a-z0-9-]+(/model)?/\\d+$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "hub-only",
+      "name": "Multi-vendor download hubs",
+      "aliases": [
+        "Multi-vendor download hubs",
+        "darkFlash",
+        "다크플래시",
+        "A4TECH",
+        "Bloody",
+        "EVGA",
+        "Xtrfy",
+        "엑스트리파이"
+      ],
+      "domains": [
+        "cherryxtrfy.com",
+        "www.a4tech.com",
+        "www.bloody.com",
+        "www.cherry.de",
+        "www.darkflash.com",
+        "www.evga.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "hub-only-brands",
+          "priority": 70,
+          "when": {
+            "brand_any": [
+              "^darkFlash",
+              "^다크플래시",
+              "^A4TECH",
+              "^Bloody",
+              "^EVGA",
+              "^Xtrfy",
+              "엑스트리파이"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.darkflash.com",
+            "www.bloody.com",
+            "www.evga.com",
+            "cherryxtrfy.com",
+            "www.a4tech.com",
+            "www.cherry.de"
+          ],
+          "url_patterns": [
+            "^https://www\\.darkflash\\.com/[a-z]{2}/driver/?$",
+            "^https://www\\.bloody\\.com/[a-z]{2}/download\\.php$",
+            "^https://www\\.evga\\.com/support/download/?$",
+            "^https://cherryxtrfy\\.com/downloads/?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "huion",
+      "name": "Huion",
+      "aliases": [
+        "Huion"
+      ],
+      "domains": [
+        "www.huion.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "huion-tablet",
+          "priority": 46,
+          "when": {
+            "brand_any": [
+              "^HUION",
+              "휴이온"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.huion.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.huion\\.com/download(/.+)?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "hyperx",
+      "name": "HyperX",
+      "aliases": [
+        "HyperX",
+        "하이퍼엑스"
+      ],
+      "domains": [
+        "row.hyperx.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://row.hyperx.com/ko/pages/ngenuity"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "hyperx-ngenuity",
+          "priority": 39.5,
+          "when": {
+            "brand_any": [
+              "^HyperX$",
+              "^하이퍼엑스$"
+            ],
+            "name_any": [
+              "PULSEFIRE",
+              "펄스파이어",
+              "ALLOY\\s+(ORIGINS|RISE)",
+              "알로이\\s*(오리진|라이즈)",
+              "ORIGINS\\s+2",
+              "CLOUD",
+              "QUADCAST",
+              "SOLOCAST",
+              "DUOCAST",
+              "VISION\\s+S",
+              "ARMADA"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "row.hyperx.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "hyperx-ngenuity-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "hyperx-ngenuity-software",
+          "name": "hyperx-ngenuity",
+          "canonical_page": "https://row.hyperx.com/ko/pages/ngenuity",
+          "support_mode": "family-rule",
+          "rule_id": "hyperx-ngenuity",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://row.hyperx.com/ko/pages/ngenuity"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "intel",
+      "name": "Intel",
+      "aliases": [
+        "Intel"
+      ],
+      "domains": [
+        "www.intel.co.kr",
+        "www.intel.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "intel-arc-gpu",
+          "priority": 14,
+          "when": {
+            "name_any": [
+              "\\bArc\\s+(?:Pro\\s+)?[AB]\\d{2,3}\\b",
+              "인텔\\s?Arc",
+              "\\bIntel\\s+Arc\\s+(?:Pro\\s+)?[AB]\\d{2,3}\\b"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.intel.co.kr",
+            "www.intel.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.intel\\.co\\.kr/content/www/kr/ko/(products/sku/\\d+/.+|download/.+)",
+            "^https://www\\.intel\\.com/content/www/us/en/download/.+"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "keychron",
+      "name": "Keychron",
+      "aliases": [
+        "Keychron",
+        "키크론"
+      ],
+      "domains": [
+        "keychron.kr",
+        "www.keychron.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://keychron.kr/launcher/"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "keychron",
+          "priority": 35,
+          "when": {
+            "brand_any": [
+              "^Keychron",
+              "키크론"
+            ],
+            "name_any": [
+              "키보드",
+              "키패드",
+              "마우스",
+              "keyboard",
+              "keypad",
+              "mouse"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "keychron.kr",
+            "www.keychron.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "keychron-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "keychron-software",
+          "name": "keychron",
+          "canonical_page": "https://keychron.kr/launcher/",
+          "support_mode": "family-rule",
+          "rule_id": "keychron",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://keychron.kr/launcher/"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "lianli",
+      "name": "LIAN-LI",
+      "aliases": [
+        "LIAN-LI",
+        "LIAN LI",
+        "리안리"
+      ],
+      "domains": [
+        "lian-li.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://lian-li.com/ko/l-connect3/"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "lianli-lconnect3",
+          "priority": 54.5,
+          "when": {
+            "brand_any": [
+              "^LIAN-LI$",
+              "^LIAN LI$",
+              "^리안리$"
+            ],
+            "name_any": [
+              "HYDROSHIFT\\s*II.*(OLED|LCD)"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "lian-li.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "lianli-lconnect3-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "lianli-lconnect3-software",
+          "name": "lianli-lconnect3",
+          "canonical_page": "https://lian-li.com/ko/l-connect3/",
+          "support_mode": "family-rule",
+          "rule_id": "lianli-lconnect3",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://lian-li.com/ko/l-connect3/"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "logitech",
+      "name": "Logitech",
+      "aliases": [
+        "Logitech",
+        "로지텍"
+      ],
+      "domains": [
+        "support.logi.com",
+        "www.logitech.com",
+        "www.logitechg.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.logitech.com/ko-kr/software/logi-options-plus",
+        "https://www.logitechg.com/ko-kr/software/ghub"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "logitech-g-gaming",
+          "priority": 30,
+          "when": {
+            "brand_any": [
+              "로지텍",
+              "^Logitech"
+            ],
+            "name_any": [
+              "로지텍\\s?G\\b",
+              "\\bG\\s?PRO\\b",
+              "\\bG\\d{3,4}\\b",
+              "게이밍",
+              "\\bASTRO\\b"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.logitechg.com",
+            "www.logitech.com",
+            "support.logi.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "logitech-g-gaming-software"
+        },
+        {
+          "id": "logitech-general",
+          "priority": 31,
+          "when": {
+            "brand_any": [
+              "로지텍",
+              "^Logitech"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.logitech.com",
+            "www.logitechg.com",
+            "support.logi.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "logitech-general-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "logitech-g-gaming-software",
+          "name": "logitech-g-gaming",
+          "canonical_page": "https://www.logitechg.com/ko-kr/software/ghub",
+          "support_mode": "family-rule",
+          "rule_id": "logitech-g-gaming",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.logitechg.com/ko-kr/software/ghub"
+          ],
+          "software_kind": "utility"
+        },
+        {
+          "id": "logitech-general-software",
+          "name": "logitech-general",
+          "canonical_page": "https://www.logitech.com/ko-kr/software/logi-options-plus",
+          "support_mode": "family-rule",
+          "rule_id": "logitech-general",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.logitech.com/ko-kr/software/logi-options-plus"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "maxsun",
+      "name": "Maxsun",
+      "aliases": [
+        "Maxsun"
+      ],
+      "domains": [
+        "www.maxsun.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "maxsun",
+          "priority": 62,
+          "when": {
+            "brand_any": [
+              "^MAXSUN"
+            ],
+            "name_none": [
+              "지포스",
+              "GeForce",
+              "RTX",
+              "라데온"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.maxsun.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.maxsun\\.com/ko/products/.+"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "micronics",
+      "name": "Micronics",
+      "aliases": [
+        "Micronics",
+        "마이크로닉스"
+      ],
+      "domains": [
+        "www.micronics.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "micronics",
+          "priority": 58,
+          "when": {
+            "brand_any": [
+              "마이크로닉스",
+              "^MICRONICS"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.micronics.co.kr"
+          ],
+          "url_patterns": [
+            "^https://www\\.micronics\\.co\\.kr/micronics/view_download\\.php\\?id=\\d+$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "monstargear",
+      "name": "Monstargear",
+      "aliases": [
+        "Monstargear",
+        "몬스타기어"
+      ],
+      "domains": [
+        "www.monstargear.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "monstargear",
+          "priority": 58.5,
+          "when": {
+            "brand_any": [
+              "^몬스타기어$",
+              "^MONSTARGEAR$"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.monstargear.co.kr"
+          ],
+          "url_patterns": [
+            "^https://www\\.monstargear\\.co\\.kr/\\d+/?\\?[^#]*(bmode=view|idx=\\d+)[^#]*$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "msi",
+      "name": "MSI",
+      "aliases": [
+        "MSI"
+      ],
+      "domains": [
+        "ipc.msi.com",
+        "kr.msi.com",
+        "www.msi.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "msi-motherboard",
+          "priority": 24,
+          "when": {
+            "brand_any": [
+              "^MSI"
+            ],
+            "name_none": [
+              "지포스",
+              "GeForce",
+              "RTX",
+              "라데온",
+              "Radeon"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "kr.msi.com",
+            "www.msi.com",
+            "ipc.msi.com"
+          ],
+          "url_patterns": [
+            "^https://(kr\\.|www\\.)msi\\.com/[A-Za-z-]+/[A-Za-z0-9-]+/support(#driver)?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "aliases": [
+        "NVIDIA"
+      ],
+      "domains": [
+        "www.nvidia.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.nvidia.com/ko-kr/drivers/",
+        "https://www.nvidia.com/ko-kr/software/nvidia-app",
+        "https://www.nvidia.com/ko-kr/software/nvidia-app-enterprise"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "nvidia-geforce-consumer",
+          "priority": 10,
+          "when": {
+            "name_any": [
+              "지포스",
+              "GeForce",
+              "\\bRTX\\s?\\d{4}\\b",
+              "\\bGTX\\s?\\d{3,4}\\b"
+            ],
+            "name_none": [
+              "RTX\\s?PRO",
+              "Quadro",
+              "쿼드로",
+              "Ada\\s?Generation",
+              "\\bL40",
+              "\\bA\\d{2,4}\\b\\s?(48GB|80GB)",
+              "Tesla",
+              "\\bH100\\b",
+              "\\bH200\\b",
+              "딥러닝",
+              "\\bGT\\s?\\d{3}\\b",
+              "GTX\\s?(6|7|8|9)\\d{2}\\b"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.nvidia.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "nvidia-geforce-consumer-software"
+        },
+        {
+          "id": "nvidia-pro-enterprise",
+          "priority": 11,
+          "when": {
+            "name_any": [
+              "RTX\\s?PRO",
+              "Quadro",
+              "쿼드로",
+              "Ada\\s?Generation",
+              "\\bL40S?\\b",
+              "Tesla",
+              "\\bH100\\b",
+              "\\bH200\\b",
+              "\\bA(100|800|6000|5000|4000|2000)\\b",
+              "딥러닝",
+              "블랙웰\\s?(SFF|서버)"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.nvidia.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "nvidia-pro-enterprise-software"
+        },
+        {
+          "id": "nvidia-legacy-drivers",
+          "priority": 12,
+          "when": {
+            "name_any": [
+              "(?:지포스|GeForce).*(?:\\bGT\\s?\\d{3}\\b|GTX\\s?(?:6|7|8|9)\\d{2}\\b)",
+              "(?:\\bGT\\s?\\d{3}\\b|GTX\\s?(?:6|7|8|9)\\d{2}\\b).*(?:지포스|GeForce)"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.nvidia.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "nvidia-legacy-drivers-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "nvidia-geforce-consumer-software",
+          "name": "nvidia-geforce-consumer",
+          "canonical_page": "https://www.nvidia.com/ko-kr/software/nvidia-app",
+          "support_mode": "family-rule",
+          "rule_id": "nvidia-geforce-consumer",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.nvidia.com/ko-kr/software/nvidia-app"
+          ],
+          "software_kind": "utility"
+        },
+        {
+          "id": "nvidia-pro-enterprise-software",
+          "name": "nvidia-pro-enterprise",
+          "canonical_page": "https://www.nvidia.com/ko-kr/software/nvidia-app-enterprise",
+          "support_mode": "family-rule",
+          "rule_id": "nvidia-pro-enterprise",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.nvidia.com/ko-kr/software/nvidia-app-enterprise"
+          ],
+          "software_kind": "utility"
+        },
+        {
+          "id": "nvidia-legacy-drivers-software",
+          "name": "nvidia-legacy-drivers",
+          "canonical_page": "https://www.nvidia.com/ko-kr/drivers/",
+          "support_mode": "family-rule",
+          "rule_id": "nvidia-legacy-drivers",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.nvidia.com/ko-kr/drivers/"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "pulsar",
+      "name": "Pulsar",
+      "aliases": [
+        "Pulsar"
+      ],
+      "domains": [
+        "www.pulsar.gg"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.pulsar.gg/pages/download"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "pulsar",
+          "priority": 56,
+          "when": {
+            "brand_any": [
+              "^pulsar",
+              "펄사"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.pulsar.gg"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "pulsar-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "pulsar-software",
+          "name": "pulsar",
+          "canonical_page": "https://www.pulsar.gg/pages/download",
+          "support_mode": "family-rule",
+          "rule_id": "pulsar",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.pulsar.gg/pages/download"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "rapoo",
+      "name": "Rapoo",
+      "aliases": [
+        "Rapoo",
+        "라푸"
+      ],
+      "domains": [
+        "shop.rapoo.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "rapoo-gaming",
+          "priority": 51.5,
+          "when": {
+            "brand_any": [
+              "^Rapoo$",
+              "^RAPOO$",
+              "^라푸$"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "shop.rapoo.com"
+          ],
+          "url_patterns": [
+            "^https://shop\\.rapoo\\.com/products/[a-z0-9-]+/?(?:\\?.*)?$",
+            "^https://shop\\.rapoo\\.com/pages/software-download/?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "razer",
+      "name": "Razer",
+      "aliases": [
+        "Razer",
+        "레이저"
+      ],
+      "domains": [
+        "www.razer.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.razer.com/kr-kr/synapse-4"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "razer",
+          "priority": 32,
+          "when": {
+            "brand_any": [
+              "^RAZER",
+              "레이저"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.razer.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "razer-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "razer-software",
+          "name": "razer",
+          "canonical_page": "https://www.razer.com/kr-kr/synapse-4",
+          "support_mode": "family-rule",
+          "rule_id": "razer",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.razer.com/kr-kr/synapse-4"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "aliases": [
+        "Samsung",
+        "삼성전자"
+      ],
+      "domains": [
+        "semiconductor.samsung.com",
+        "www.samsung.com",
+        "www.samsungsvc.co.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://semiconductor.samsung.com/kr/consumer-storage/magician/"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "samsung-ssd-magician",
+          "priority": 39,
+          "when": {
+            "brand_any": [
+              "삼성전자",
+              "^Samsung"
+            ],
+            "name_any": [
+              "\\bSSD\\b",
+              "\\bNVMe\\b",
+              "\\b9\\d{2}\\s?(PRO|EVO)\\b",
+              "\\b8\\d{2}\\s?(PRO|EVO|QVO)\\b"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "semiconductor.samsung.com",
+            "www.samsung.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "samsung-ssd-magician-software"
+        },
+        {
+          "id": "samsung-printer",
+          "priority": 41,
+          "when": {
+            "brand_any": [
+              "삼성전자",
+              "^Samsung"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.samsung.com",
+            "www.samsungsvc.co.kr"
+          ],
+          "url_patterns": [
+            "^https://www\\.samsung\\.com/sec/support/model/[A-Z0-9-]+/?$",
+            "^https://www\\.samsungsvc\\.co\\.kr/download/view\\?code=[A-Z0-9-]+(?:&.*)?$"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "samsung-ssd-magician-software",
+          "name": "samsung-ssd-magician",
+          "canonical_page": "https://semiconductor.samsung.com/kr/consumer-storage/magician/",
+          "support_mode": "family-rule",
+          "rule_id": "samsung-ssd-magician",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://semiconductor.samsung.com/kr/consumer-storage/magician/"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "sindoh",
+      "name": "Sindoh",
+      "aliases": [
+        "Sindoh"
+      ],
+      "domains": [
+        "www.sindoh.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "sindoh",
+          "priority": 65,
+          "when": {
+            "brand_any": [
+              "신도리코",
+              "^SINDOH"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.sindoh.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.sindoh\\.com/support/download/.+"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "steelseries",
+      "name": "SteelSeries",
+      "aliases": [
+        "SteelSeries",
+        "스틸시리즈"
+      ],
+      "domains": [
+        "kr.steelseries.com",
+        "steelseries.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://steelseries.com/ko-kr/gg"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "steelseries",
+          "priority": 36,
+          "when": {
+            "brand_any": [
+              "스틸시리즈",
+              "^SteelSeries"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "steelseries.com",
+            "kr.steelseries.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "steelseries-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "steelseries-software",
+          "name": "steelseries",
+          "canonical_page": "https://steelseries.com/ko-kr/gg",
+          "support_mode": "family-rule",
+          "rule_id": "steelseries",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://steelseries.com/ko-kr/gg"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "synology",
+      "name": "Synology",
+      "aliases": [
+        "Synology",
+        "시놀로지"
+      ],
+      "domains": [
+        "kb.synology.com",
+        "www.synology.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "synology-nas",
+          "priority": 47,
+          "when": {
+            "brand_any": [
+              "^Synology",
+              "시놀로지"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.synology.com",
+            "kb.synology.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.synology\\.com/(ko-kr|en-global)/support/download/[A-Za-z0-9+-]+.*"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "tryx",
+      "name": "TRYX",
+      "aliases": [
+        "TRYX"
+      ],
+      "domains": [
+        "www.tryx.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://www.tryx.com/en/kanali"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "tryx-kanali",
+          "priority": 69,
+          "when": {
+            "brand_any": [
+              "^TRYX$"
+            ],
+            "name_any": [
+              "PANORAMA"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "www.tryx.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "tryx-kanali-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "tryx-kanali-software",
+          "name": "tryx-kanali",
+          "canonical_page": "https://www.tryx.com/en/kanali",
+          "support_mode": "family-rule",
+          "rule_id": "tryx-kanali",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://www.tryx.com/en/kanali"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "turtlebeach",
+      "name": "Turtle Beach",
+      "aliases": [
+        "Turtle Beach"
+      ],
+      "domains": [
+        "support.roccat.com",
+        "support.turtlebeach.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "turtlebeach-roccat",
+          "priority": 64,
+          "when": {
+            "brand_any": [
+              "^ROCCAT",
+              "^Turtle",
+              "터틀비치"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "support.turtlebeach.com",
+            "support.roccat.com"
+          ],
+          "url_patterns": [
+            "^https://support\\.turtlebeach\\.com/s/downloads\\?language=ko.*",
+            "^https://support\\.roccat\\.com/s/article/.+"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "vgn",
+      "name": "VGN",
+      "aliases": [
+        "VGN"
+      ],
+      "domains": [
+        "vgnlab.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://vgnlab.com/pages/download"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "vgn-support",
+          "priority": 500,
+          "when": {
+            "brand_any": [
+              "^vgn$"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "vgnlab.com"
+          ]
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "wacom",
+      "name": "Wacom",
+      "aliases": [
+        "Wacom"
+      ],
+      "domains": [
+        "www.wacom.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "wacom-tablet",
+          "priority": 45,
+          "when": {
+            "brand_any": [
+              "^Wacom",
+              "와콤"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.wacom.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.wacom\\.com/(ko-kr|en-us)/support/product-support/drivers.*",
+            "^https://www\\.wacom\\.com/ko-kr/support.*"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    },
+    {
+      "id": "wd-sandisk",
+      "name": "SanDisk",
+      "aliases": [
+        "SanDisk",
+        "WD",
+        "Western Digital",
+        "샌디스크"
+      ],
+      "domains": [
+        "support-en.sandisk.com",
+        "support-kr.sandisk.com",
+        "www.sandisk.com",
+        "www.westerndigital.com"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [
+        "https://support-en.sandisk.com/app/products/downloads/softwaredownloads"
+      ],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "wd-sandisk-dashboard",
+          "priority": 48,
+          "when": {
+            "brand_any": [
+              "^WD\\b",
+              "^Western",
+              "^SanDisk",
+              "웨스턴디지털",
+              "샌디스크"
+            ],
+            "name_any": [
+              "\\bSSD\\b",
+              "\\bNVMe\\b",
+              "\\bSN\\d{3,4}\\b"
+            ]
+          },
+          "action": "ecosystem",
+          "allowed_domains": [
+            "support-en.sandisk.com",
+            "support-kr.sandisk.com",
+            "www.sandisk.com",
+            "www.westerndigital.com"
+          ],
+          "allow_hub": false,
+          "ecosystem_id": "wd-sandisk-dashboard-software"
+        }
+      ],
+      "ecosystems": [
+        {
+          "id": "wd-sandisk-dashboard-software",
+          "name": "wd-sandisk-dashboard",
+          "canonical_page": "https://support-en.sandisk.com/app/products/downloads/softwaredownloads",
+          "support_mode": "family-rule",
+          "rule_id": "wd-sandisk-dashboard",
+          "supported_models": [],
+          "excluded_models": [],
+          "status": "needs-refresh",
+          "verified_at": null,
+          "provenance": [
+            "https://support-en.sandisk.com/app/products/downloads/softwaredownloads"
+          ],
+          "software_kind": "utility"
+        }
+      ]
+    },
+    {
+      "id": "xp-pen",
+      "name": "XP-Pen",
+      "aliases": [
+        "XP-Pen",
+        "XPPEN",
+        "엑스피펜"
+      ],
+      "domains": [
+        "www.xp-pen.com",
+        "www.xp-pen.kr"
+      ],
+      "classification": "PUBLIC_SOURCE_ONLY",
+      "provenance": [],
+      "verified_at": null,
+      "noise_tokens": [],
+      "model_aliases": [],
+      "models": [],
+      "rules": [
+        {
+          "id": "xp-pen-tablet",
+          "priority": 44,
+          "when": {
+            "brand_any": [
+              "^XP-?PEN",
+              "엑스피펜"
+            ]
+          },
+          "action": "model_page",
+          "allowed_domains": [
+            "www.xp-pen.kr",
+            "www.xp-pen.com"
+          ],
+          "url_patterns": [
+            "^https://www\\.xp-pen\\.kr/download-\\d+\\.html$",
+            "^https://www\\.xp-pen\\.com/download/[a-z0-9-]+\\.html$"
+          ],
+          "forbid_url_regex": [
+            "xp-pen\\.(kr|com|co\\.kr)/download/?(index)?$",
+            "xp-pen\\.co\\.kr"
+          ],
+          "allow_hub": false
+        }
+      ],
+      "ecosystems": []
+    }
+  ]
+}

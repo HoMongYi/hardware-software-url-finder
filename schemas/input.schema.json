@@ -1,0 +1,1 @@
+{"$id":"hsuf-input","type":"object","additionalProperties":false,"required":["product_name"],"properties":{"input_id":{"type":"string","maxLength":200},"product_name":{"type":"string","minLength":1,"maxLength":1000},"category":{"type":"string","maxLength":80},"metadata":{"type":"object","maxProperties":20}}}

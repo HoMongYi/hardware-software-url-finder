@@ -1,0 +1,53 @@
+{
+  "id": "durgod",
+  "name": "Durgod",
+  "aliases": [
+    "Durgod"
+  ],
+  "domains": [
+    "www.durgod.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.durgod.com/softwares/"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "durgod",
+      "priority": 54,
+      "when": {
+        "brand_any": [
+          "^DURGOD",
+          "듀가드"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.durgod.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "durgod-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "durgod-software",
+      "name": "durgod",
+      "canonical_page": "https://www.durgod.com/softwares/",
+      "support_mode": "family-rule",
+      "rule_id": "durgod",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.durgod.com/softwares/"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

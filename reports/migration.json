@@ -1,0 +1,12 @@
+{
+  "source_version": "2.2.1",
+  "source_csv_sha256": "4ec799950f22135d30f5406e6666c360e210c4f840342443d4cc2d07e556a90d",
+  "source_csv_rows": 1549,
+  "public_exact_mappings_imported": 0,
+  "public_rules": 56,
+  "public_ecosystems": 24,
+  "held_catalogue_mappings": 1549,
+  "reason": "Catalogue and regional-equivalence mappings have UNKNOWN public redistribution provenance. Generic rules generalized by field allowlist; independently fetched manufacturer evidence is required for public exact URL records.",
+  "alias_hints_held": 31,
+  "public_aliases_imported": 0
+}

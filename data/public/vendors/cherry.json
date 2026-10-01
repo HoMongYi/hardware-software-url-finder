@@ -1,0 +1,53 @@
+{
+  "id": "cherry",
+  "name": "Cherry",
+  "aliases": [
+    "Cherry"
+  ],
+  "domains": [
+    "www.cherry.de"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.cherry.de/ko-kr/제품/소프트웨어-및-서비스/cherry-utility"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "cherry",
+      "priority": 38,
+      "when": {
+        "brand_any": [
+          "^Cherry",
+          "체리"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.cherry.de"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "cherry-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "cherry-software",
+      "name": "cherry",
+      "canonical_page": "https://www.cherry.de/ko-kr/제품/소프트웨어-및-서비스/cherry-utility",
+      "support_mode": "family-rule",
+      "rule_id": "cherry",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.cherry.de/ko-kr/제품/소프트웨어-및-서비스/cherry-utility"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

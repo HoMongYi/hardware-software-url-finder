@@ -1,0 +1,56 @@
+{
+  "id": "steelseries",
+  "name": "SteelSeries",
+  "aliases": [
+    "SteelSeries",
+    "스틸시리즈"
+  ],
+  "domains": [
+    "kr.steelseries.com",
+    "steelseries.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://steelseries.com/ko-kr/gg"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "steelseries",
+      "priority": 36,
+      "when": {
+        "brand_any": [
+          "스틸시리즈",
+          "^SteelSeries"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "steelseries.com",
+        "kr.steelseries.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "steelseries-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "steelseries-software",
+      "name": "steelseries",
+      "canonical_page": "https://steelseries.com/ko-kr/gg",
+      "support_mode": "family-rule",
+      "rule_id": "steelseries",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://steelseries.com/ko-kr/gg"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$id":"hsuf-vendor","type":"object","additionalProperties":false,
+  "required":["id","name","aliases","domains","classification","provenance","verified_at","noise_tokens","model_aliases","models","rules","ecosystems"],
+  "properties":{
+    "id":{"type":"string","pattern":"^[a-z0-9][a-z0-9-]*$"},"name":{"type":"string","minLength":1},
+    "aliases":{"type":"array","items":{"type":"string"}},"domains":{"type":"array","items":{"type":"string","pattern":"^[a-z0-9.-]+$"}},
+    "classification":{"enum":["PUBLIC_SOURCE_ONLY","SYNTHETIC","UNKNOWN"]},"provenance":{"type":"array","items":{"type":"string"}},
+    "verified_at":{"type":["string","null"]},"noise_tokens":{"type":"array","items":{"type":"string"}},
+    "model_aliases":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["from","to","status","provenance"],"properties":{"from":{"type":"string"},"to":{"type":"string"},"status":{"enum":["confirmed","needs-refresh"]},"provenance":{"type":"array","items":{"type":"string"}}}}},
+    "models":{"type":"array","items":{"$ref":"#/definitions/record"}},
+    "ecosystems":{"type":"array","items":{"$ref":"#/definitions/record"}},
+    "rules":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","priority","when","action"],"properties":{"id":{"type":"string"},"priority":{"type":"number"},"when":{"type":"object","additionalProperties":false,"properties":{"brand_any":{"type":"array","items":{"type":"string"}},"name_any":{"type":"array","items":{"type":"string"}},"name_all":{"type":"array","items":{"type":"string"}},"name_none":{"type":"array","items":{"type":"string"}}}},"action":{"enum":["ecosystem","model_page"]},"ecosystem_id":{"type":"string"},"allowed_domains":{"type":"array","items":{"type":"string"}},"url_patterns":{"type":"array","items":{"type":"string"}},"forbid_url_regex":{"type":"array","items":{"type":"string"}},"delegated_domains":{"type":"array","items":{"type":"string"}},"delegated_evidence_url_patterns":{"type":"array","items":{"type":"string"}},"allow_hub":{"type":"boolean"},"allow_delegated_root":{"type":"boolean"}}}}
+  },
+  "definitions":{"record":{"type":"object","additionalProperties":false,"required":["id","canonical_page","status","verified_at","provenance","support_mode","supported_models","excluded_models"],"properties":{"id":{"type":"string"},"name":{"type":"string"},"model":{"type":"string"},"canonical_page":{"type":"string"},"status":{"enum":["active","deprecated","retired","replaced","needs-refresh"]},"verified_at":{"type":["string","null"]},"provenance":{"type":"array","minItems":1,"items":{"type":"string"}},"support_mode":{"enum":["exact","explicit-model-list","family-rule"]},"supported_models":{"type":"array","items":{"type":"string"}},"excluded_models":{"type":"array","items":{"type":"string"}},"successor":{"type":["string","null"]},"rule_id":{"type":"string"},"software_kind":{"type":"string"},"max_age_days":{"type":"integer","minimum":1}}}}
+}

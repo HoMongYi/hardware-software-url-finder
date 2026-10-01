@@ -1,0 +1,50 @@
+{
+  "id": "fl-esports",
+  "name": "FL-ESPORTS",
+  "aliases": [
+    "FL-ESPORTS",
+    "FLESPORTS",
+    "FL ESPORTS"
+  ],
+  "domains": [
+    "funkeys.co.kr",
+    "www.flesports.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "fl-esports",
+      "priority": 50.5,
+      "when": {
+        "brand_any": [
+          "^FL-ESPORTS$",
+          "^FLESPORTS$",
+          "^FL ESPORTS$"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "funkeys.co.kr",
+        "www.flesports.com"
+      ],
+      "url_patterns": [
+        "^https://funkeys\\.co\\.kr/bbs/board\\.php\\?(?=[^#]*bo_table=download(?:&|$))[^#]*wr_id=\\d+(?:&.*)?$",
+        "^https://www\\.flesports\\.com/index\\.php/home/(support|webconsole)/?$"
+      ],
+      "delegated_domains": [
+        "qmk.top"
+      ],
+      "delegated_evidence_url_patterns": [
+        "^https://funkeys\\.co\\.kr/bbs/board\\.php\\?(?=[^#]*bo_table=download(?:&|$))[^#]*wr_id=\\d+(?:&.*)?$"
+      ],
+      "allow_delegated_root": true,
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

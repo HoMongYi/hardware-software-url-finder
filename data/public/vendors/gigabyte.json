@@ -1,0 +1,44 @@
+{
+  "id": "gigabyte",
+  "name": "GIGABYTE",
+  "aliases": [
+    "GIGABYTE"
+  ],
+  "domains": [
+    "www.gigabyte.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "gigabyte-motherboard",
+      "priority": 23,
+      "when": {
+        "brand_any": [
+          "^GIGABYTE",
+          "^AORUS"
+        ],
+        "name_none": [
+          "지포스",
+          "GeForce",
+          "RTX",
+          "라데온",
+          "Radeon"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.gigabyte.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.gigabyte\\.com/(kr/)?[A-Za-z-]+/.+/support(#Support-Driver)?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

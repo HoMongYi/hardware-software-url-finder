@@ -1,0 +1,85 @@
+{
+  "id": "coolermaster",
+  "name": "Cooler Master",
+  "aliases": [
+    "Cooler Master",
+    "쿨러마스터",
+    "COOLERMASTER"
+  ],
+  "domains": [
+    "coolermaster.com",
+    "legacy.coolermaster.com",
+    "www.coolermaster.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.coolermaster.com/ko-kr/masterctrl.html"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "coolermaster-masterctrl",
+      "priority": 37,
+      "when": {
+        "brand_any": [
+          "쿨러마스터",
+          "^Cooler\\s?Master",
+          "^COOLERMASTER"
+        ],
+        "name_any": [
+          "ATMOS\\s?II.*(?:LCD|Pixel\\s?LED|PIXEL)"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.coolermaster.com",
+        "coolermaster.com",
+        "legacy.coolermaster.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "coolermaster-masterctrl-software"
+    },
+    {
+      "id": "coolermaster-review",
+      "priority": 37.5,
+      "when": {
+        "brand_any": [
+          "쿨러마스터",
+          "^Cooler\\s?Master",
+          "^COOLERMASTER"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.coolermaster.com",
+        "coolermaster.com",
+        "legacy.coolermaster.com"
+      ],
+      "url_patterns": [
+        "^https://(?:www\\.)?coolermaster\\.com/(?:ko-kr|en-global)/(?:products|masterplus|masterctrl).+",
+        "^https://legacy\\.coolermaster\\.com/(?:ko-kr|en-global)/(?:products|masterplus|masterctrl).+"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "coolermaster-masterctrl-software",
+      "name": "coolermaster-masterctrl",
+      "canonical_page": "https://www.coolermaster.com/ko-kr/masterctrl.html",
+      "support_mode": "family-rule",
+      "rule_id": "coolermaster-masterctrl",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.coolermaster.com/ko-kr/masterctrl.html"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

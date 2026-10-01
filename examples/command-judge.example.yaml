@@ -1,0 +1,15 @@
+version: 1
+name: generic-command
+search:
+  provider: generic-http
+  candidate_limit_after_scoring: 5
+judge:
+  provider: command
+  command:
+    command: node
+    args:
+      - examples/command-judge.mjs
+    timeoutMs: 12000
+    maxBytes: 65536
+audit:
+  final_core_audit_required: true

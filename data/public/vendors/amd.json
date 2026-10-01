@@ -1,0 +1,38 @@
+{
+  "id": "amd",
+  "name": "AMD",
+  "aliases": [
+    "AMD"
+  ],
+  "domains": [
+    "www.amd.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "amd-radeon-gpu",
+      "priority": 13,
+      "when": {
+        "name_any": [
+          "라데온",
+          "Radeon",
+          "\\bRX\\s?\\d{3,4}\\b"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.amd.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.amd\\.com/(ko|en)/support/downloads/(drivers|previous-drivers)\\.html/graphics/.+\\.html$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

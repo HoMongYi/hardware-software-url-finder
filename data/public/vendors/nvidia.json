@@ -1,0 +1,142 @@
+{
+  "id": "nvidia",
+  "name": "NVIDIA",
+  "aliases": [
+    "NVIDIA"
+  ],
+  "domains": [
+    "www.nvidia.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.nvidia.com/ko-kr/drivers/",
+    "https://www.nvidia.com/ko-kr/software/nvidia-app",
+    "https://www.nvidia.com/ko-kr/software/nvidia-app-enterprise"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "nvidia-geforce-consumer",
+      "priority": 10,
+      "when": {
+        "name_any": [
+          "지포스",
+          "GeForce",
+          "\\bRTX\\s?\\d{4}\\b",
+          "\\bGTX\\s?\\d{3,4}\\b"
+        ],
+        "name_none": [
+          "RTX\\s?PRO",
+          "Quadro",
+          "쿼드로",
+          "Ada\\s?Generation",
+          "\\bL40",
+          "\\bA\\d{2,4}\\b\\s?(48GB|80GB)",
+          "Tesla",
+          "\\bH100\\b",
+          "\\bH200\\b",
+          "딥러닝",
+          "\\bGT\\s?\\d{3}\\b",
+          "GTX\\s?(6|7|8|9)\\d{2}\\b"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.nvidia.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "nvidia-geforce-consumer-software"
+    },
+    {
+      "id": "nvidia-pro-enterprise",
+      "priority": 11,
+      "when": {
+        "name_any": [
+          "RTX\\s?PRO",
+          "Quadro",
+          "쿼드로",
+          "Ada\\s?Generation",
+          "\\bL40S?\\b",
+          "Tesla",
+          "\\bH100\\b",
+          "\\bH200\\b",
+          "\\bA(100|800|6000|5000|4000|2000)\\b",
+          "딥러닝",
+          "블랙웰\\s?(SFF|서버)"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.nvidia.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "nvidia-pro-enterprise-software"
+    },
+    {
+      "id": "nvidia-legacy-drivers",
+      "priority": 12,
+      "when": {
+        "name_any": [
+          "(?:지포스|GeForce).*(?:\\bGT\\s?\\d{3}\\b|GTX\\s?(?:6|7|8|9)\\d{2}\\b)",
+          "(?:\\bGT\\s?\\d{3}\\b|GTX\\s?(?:6|7|8|9)\\d{2}\\b).*(?:지포스|GeForce)"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.nvidia.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "nvidia-legacy-drivers-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "nvidia-geforce-consumer-software",
+      "name": "nvidia-geforce-consumer",
+      "canonical_page": "https://www.nvidia.com/ko-kr/software/nvidia-app",
+      "support_mode": "family-rule",
+      "rule_id": "nvidia-geforce-consumer",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.nvidia.com/ko-kr/software/nvidia-app"
+      ],
+      "software_kind": "utility"
+    },
+    {
+      "id": "nvidia-pro-enterprise-software",
+      "name": "nvidia-pro-enterprise",
+      "canonical_page": "https://www.nvidia.com/ko-kr/software/nvidia-app-enterprise",
+      "support_mode": "family-rule",
+      "rule_id": "nvidia-pro-enterprise",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.nvidia.com/ko-kr/software/nvidia-app-enterprise"
+      ],
+      "software_kind": "utility"
+    },
+    {
+      "id": "nvidia-legacy-drivers-software",
+      "name": "nvidia-legacy-drivers",
+      "canonical_page": "https://www.nvidia.com/ko-kr/drivers/",
+      "support_mode": "family-rule",
+      "rule_id": "nvidia-legacy-drivers",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.nvidia.com/ko-kr/drivers/"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

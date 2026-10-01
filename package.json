@@ -1,0 +1,32 @@
+{
+  "name": "hardware-software-url-finder",
+  "version": "0.1.0",
+  "description": "Registry-first official hardware software URL resolution with audited provider evidence",
+  "type": "module",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/HoMongYi/hardware-software-url-finder.git" },
+  "homepage": "https://github.com/HoMongYi/hardware-software-url-finder#readme",
+  "bugs": { "url": "https://github.com/HoMongYi/hardware-software-url-finder/issues" },
+  "engines": { "node": ">=22" },
+  "bin": { "hsuf": "bin/hsuf.mjs" },
+  "exports": { ".": "./src/index.mjs" },
+  "files": ["bin", "src", "data/public", "schemas", "config", "skills", "examples", "docs", "reports/migration.json", "reports/legacy-comparison.json", "reports/public-source-refresh.json", "reports/verification.json", "reports/FINAL_REPORT.md", "reports/RELEASE_NOTES_v0.1.0.md", "README.md", "SECURITY.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE", "LICENSE-DECISION.md"],
+  "scripts": {
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "registry:build": "node scripts/build-registry.mjs",
+    "validate": "node scripts/validate.mjs",
+    "release:build": "node scripts/release.mjs",
+    "test:live": "node scripts/live-test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.2.0",
+    "ajv": "8.20.0",
+    "csv-parse": "7.0.3",
+    "htmlparser2": "12.0.0",
+    "ipaddr.js": "^2.3.0",
+    "tldts": "7.4.16",
+    "yaml": "^2.8.1",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": { "@modelcontextprotocol/client": "2.2.0" }
+}

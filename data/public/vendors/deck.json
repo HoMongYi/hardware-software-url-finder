@@ -1,0 +1,52 @@
+{
+  "id": "deck",
+  "name": "Deck",
+  "aliases": [
+    "Deck"
+  ],
+  "domains": [
+    "deckkeyboards.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "http://deckkeyboards.co.kr/board/list.php?bdId=firmware"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "deck-keyboards",
+      "priority": 52,
+      "when": {
+        "brand_any": [
+          "^Deck"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "deckkeyboards.co.kr"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "deck-keyboards-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "deck-keyboards-software",
+      "name": "deck-keyboards",
+      "canonical_page": "http://deckkeyboards.co.kr/board/list.php?bdId=firmware",
+      "support_mode": "family-rule",
+      "rule_id": "deck-keyboards",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "http://deckkeyboards.co.kr/board/list.php?bdId=firmware"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "dell",
+  "name": "Dell",
+  "aliases": [
+    "Dell"
+  ],
+  "domains": [
+    "www.dell.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "dell-peripheral",
+      "priority": 63,
+      "when": {
+        "brand_any": [
+          "^Dell",
+          "델\\b"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.dell.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.dell\\.com/support/.+/drivers$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

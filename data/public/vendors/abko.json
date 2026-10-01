@@ -1,0 +1,42 @@
+{
+  "id": "abko",
+  "name": "ABKO",
+  "aliases": [
+    "ABKO",
+    "앱코"
+  ],
+  "domains": [
+    "ncore.co.kr",
+    "www.abko.co.kr",
+    "www.corsair.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "abko-ncore",
+      "priority": 50,
+      "when": {
+        "brand_any": [
+          "^ABKO",
+          "앱코"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "ncore.co.kr",
+        "www.abko.co.kr",
+        "www.corsair.com"
+      ],
+      "url_patterns": [
+        "^https://ncore\\.co\\.kr/bbs/data\\.php"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

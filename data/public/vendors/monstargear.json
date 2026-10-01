@@ -1,0 +1,38 @@
+{
+  "id": "monstargear",
+  "name": "Monstargear",
+  "aliases": [
+    "Monstargear",
+    "몬스타기어"
+  ],
+  "domains": [
+    "www.monstargear.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "monstargear",
+      "priority": 58.5,
+      "when": {
+        "brand_any": [
+          "^몬스타기어$",
+          "^MONSTARGEAR$"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.monstargear.co.kr"
+      ],
+      "url_patterns": [
+        "^https://www\\.monstargear\\.co\\.kr/\\d+/?\\?[^#]*(bmode=view|idx=\\d+)[^#]*$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

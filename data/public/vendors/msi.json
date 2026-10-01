@@ -1,0 +1,47 @@
+{
+  "id": "msi",
+  "name": "MSI",
+  "aliases": [
+    "MSI"
+  ],
+  "domains": [
+    "ipc.msi.com",
+    "kr.msi.com",
+    "www.msi.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "msi-motherboard",
+      "priority": 24,
+      "when": {
+        "brand_any": [
+          "^MSI"
+        ],
+        "name_none": [
+          "지포스",
+          "GeForce",
+          "RTX",
+          "라데온",
+          "Radeon"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "kr.msi.com",
+        "www.msi.com",
+        "ipc.msi.com"
+      ],
+      "url_patterns": [
+        "^https://(kr\\.|www\\.)msi\\.com/[A-Za-z-]+/[A-Za-z0-9-]+/support(#driver)?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

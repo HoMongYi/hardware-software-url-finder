@@ -1,0 +1,46 @@
+{
+  "id": "xp-pen",
+  "name": "XP-Pen",
+  "aliases": [
+    "XP-Pen",
+    "XPPEN",
+    "엑스피펜"
+  ],
+  "domains": [
+    "www.xp-pen.com",
+    "www.xp-pen.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "xp-pen-tablet",
+      "priority": 44,
+      "when": {
+        "brand_any": [
+          "^XP-?PEN",
+          "엑스피펜"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.xp-pen.kr",
+        "www.xp-pen.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.xp-pen\\.kr/download-\\d+\\.html$",
+        "^https://www\\.xp-pen\\.com/download/[a-z0-9-]+\\.html$"
+      ],
+      "forbid_url_regex": [
+        "xp-pen\\.(kr|com|co\\.kr)/download/?(index)?$",
+        "xp-pen\\.co\\.kr"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

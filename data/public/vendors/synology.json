@@ -1,0 +1,40 @@
+{
+  "id": "synology",
+  "name": "Synology",
+  "aliases": [
+    "Synology",
+    "시놀로지"
+  ],
+  "domains": [
+    "kb.synology.com",
+    "www.synology.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "synology-nas",
+      "priority": 47,
+      "when": {
+        "brand_any": [
+          "^Synology",
+          "시놀로지"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.synology.com",
+        "kb.synology.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.synology\\.com/(ko-kr|en-global)/support/download/[A-Za-z0-9+-]+.*"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

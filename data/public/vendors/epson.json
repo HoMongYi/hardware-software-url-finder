@@ -1,0 +1,43 @@
+{
+  "id": "epson",
+  "name": "Epson",
+  "aliases": [
+    "Epson",
+    "엡손"
+  ],
+  "domains": [
+    "epson.com",
+    "support.epson.net",
+    "www.epson.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "epson-printer",
+      "priority": 43,
+      "when": {
+        "brand_any": [
+          "^EPSON",
+          "엡손"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.epson.co.kr",
+        "epson.com",
+        "support.epson.net"
+      ],
+      "url_patterns": [
+        "^https://www\\.epson\\.co\\.kr/.+",
+        "^https://support\\.epson\\.net/setupnavi/\\?[^#]*MKN=[A-Z0-9-]+[^#]*$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

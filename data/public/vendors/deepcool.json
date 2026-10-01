@@ -1,0 +1,55 @@
+{
+  "id": "deepcool",
+  "name": "DeepCool",
+  "aliases": [
+    "DeepCool"
+  ],
+  "domains": [
+    "kr.deepcool.com",
+    "www.deepcool.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://kr.deepcool.com/downloadpage/"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "deepcool",
+      "priority": 55,
+      "when": {
+        "brand_any": [
+          "^DEEPCOOL",
+          "딥쿨"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "kr.deepcool.com",
+        "www.deepcool.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "deepcool-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "deepcool-software",
+      "name": "deepcool",
+      "canonical_page": "https://kr.deepcool.com/downloadpage/",
+      "support_mode": "family-rule",
+      "rule_id": "deepcool",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://kr.deepcool.com/downloadpage/"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

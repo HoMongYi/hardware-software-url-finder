@@ -1,0 +1,34 @@
+{
+  "id": "akko",
+  "name": "AKKO",
+  "aliases": [
+    "AKKO"
+  ],
+  "domains": [
+    "en.akkogear.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://en.akkogear.com/download/"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "akko-support",
+      "priority": 500,
+      "when": {
+        "brand_any": [
+          "^akko$"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "en.akkogear.com"
+      ]
+    }
+  ],
+  "ecosystems": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "hansung",
+  "name": "Hansung",
+  "aliases": [
+    "Hansung",
+    "한성컴퓨터"
+  ],
+  "domains": [
+    "www.superstore.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "hansung",
+      "priority": 59,
+      "when": {
+        "brand_any": [
+          "한성컴퓨터",
+          "^HANSUNG"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.superstore.co.kr"
+      ],
+      "url_patterns": [
+        "^https://www\\.superstore\\.co\\.kr/customer_center/read\\.html\\?.*"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

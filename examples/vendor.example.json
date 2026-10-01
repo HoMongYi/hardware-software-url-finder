@@ -1,0 +1,6 @@
+{
+  "id":"example","name":"Example","aliases":["Example"],"domains":["example.com"],
+  "classification":"SYNTHETIC","provenance":["https://example.com/support"],"verified_at":"2026-10-01",
+  "noise_tokens":["Black","White"],"model_aliases":[],"rules":[],"ecosystems":[],
+  "models":[{"id":"example-abc-v2","model":"ABC V2","canonical_page":"https://example.com/support/abc-v2","status":"active","verified_at":"2026-10-01","provenance":["https://example.com/support/abc-v2"],"support_mode":"exact","supported_models":["ABC V2"],"excluded_models":[],"software_kind":"device_config"}]
+}

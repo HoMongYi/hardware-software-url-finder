@@ -1,0 +1,67 @@
+{
+  "id": "hyperx",
+  "name": "HyperX",
+  "aliases": [
+    "HyperX",
+    "하이퍼엑스"
+  ],
+  "domains": [
+    "row.hyperx.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://row.hyperx.com/ko/pages/ngenuity"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "hyperx-ngenuity",
+      "priority": 39.5,
+      "when": {
+        "brand_any": [
+          "^HyperX$",
+          "^하이퍼엑스$"
+        ],
+        "name_any": [
+          "PULSEFIRE",
+          "펄스파이어",
+          "ALLOY\\s+(ORIGINS|RISE)",
+          "알로이\\s*(오리진|라이즈)",
+          "ORIGINS\\s+2",
+          "CLOUD",
+          "QUADCAST",
+          "SOLOCAST",
+          "DUOCAST",
+          "VISION\\s+S",
+          "ARMADA"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "row.hyperx.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "hyperx-ngenuity-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "hyperx-ngenuity-software",
+      "name": "hyperx-ngenuity",
+      "canonical_page": "https://row.hyperx.com/ko/pages/ngenuity",
+      "support_mode": "family-rule",
+      "rule_id": "hyperx-ngenuity",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://row.hyperx.com/ko/pages/ngenuity"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "intel",
+  "name": "Intel",
+  "aliases": [
+    "Intel"
+  ],
+  "domains": [
+    "www.intel.co.kr",
+    "www.intel.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "intel-arc-gpu",
+      "priority": 14,
+      "when": {
+        "name_any": [
+          "\\bArc\\s+(?:Pro\\s+)?[AB]\\d{2,3}\\b",
+          "인텔\\s?Arc",
+          "\\bIntel\\s+Arc\\s+(?:Pro\\s+)?[AB]\\d{2,3}\\b"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.intel.co.kr",
+        "www.intel.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.intel\\.co\\.kr/content/www/kr/ko/(products/sku/\\d+/.+|download/.+)",
+        "^https://www\\.intel\\.com/content/www/us/en/download/.+"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rapoo",
+  "name": "Rapoo",
+  "aliases": [
+    "Rapoo",
+    "라푸"
+  ],
+  "domains": [
+    "shop.rapoo.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "rapoo-gaming",
+      "priority": 51.5,
+      "when": {
+        "brand_any": [
+          "^Rapoo$",
+          "^RAPOO$",
+          "^라푸$"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "shop.rapoo.com"
+      ],
+      "url_patterns": [
+        "^https://shop\\.rapoo\\.com/products/[a-z0-9-]+/?(?:\\?.*)?$",
+        "^https://shop\\.rapoo\\.com/pages/software-download/?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

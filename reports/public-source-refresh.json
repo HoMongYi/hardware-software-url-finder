@@ -1,0 +1,124 @@
+{
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "timeout_ms": 10000,
+  "max_bytes": 1048576,
+  "concurrency": 1,
+  "max_redirects": 3,
+  "retries": 0,
+  "results": [
+    {
+      "vendor": "asrock",
+      "model": "B860M Challenger WiFi White",
+      "source_url": "https://www.asrock.com/mb/Intel/B860M%20Challenger%20WiFi%20White/index.kr.asp#Download",
+      "final_url": "https://www.asrock.com/mb/Intel/B860M%20Challenger%20WiFi%20White/index.kr.asp#Download",
+      "http_status": 200,
+      "status": "Needs verification",
+      "exact_model_visible": false,
+      "download_content_visible": false,
+      "browser_required": false,
+      "content_sha256": "cffbcbd85b0cc8aed9a0bf35e04a9bccb623ac4f76bfeb1bf168307da9493752",
+      "verified_at": null
+    },
+    {
+      "vendor": "intel",
+      "model": "Intel Arc Pro B70",
+      "source_url": "https://www.intel.co.kr/content/www/kr/ko/products/sku/245797/intel-arc-pro-b70-graphics/downloads.html",
+      "final_url": "https://www.intel.co.kr/content/www/kr/ko/products/sku/245797/intel-arc-pro-b70-graphics/downloads.html",
+      "http_status": 403,
+      "status": "Needs verification",
+      "exact_model_visible": false,
+      "download_content_visible": true,
+      "browser_required": true,
+      "content_sha256": "09cb156fd73286eb3463845e1292bb924e0fcc2dad124156111f6b81ea477be4",
+      "verified_at": null
+    },
+    {
+      "vendor": "epson",
+      "model": "PX-M887F",
+      "source_url": "https://support.epson.net/setupnavi/?LG2=KO&OSC=ARD&MKN=PX-M887F&PINF=support",
+      "final_url": "https://support.epson.net/setupnavi/?LG2=KO&OSC=ARD&MKN=PX-M887F&PINF=support",
+      "http_status": 200,
+      "status": "Needs verification",
+      "exact_model_visible": true,
+      "download_content_visible": false,
+      "browser_required": false,
+      "content_sha256": "6291b18b9d24ce732405a3e19a0b0c3dd7aa5c4849816fc662a931844ff9dee7",
+      "verified_at": null
+    },
+    {
+      "vendor": "hp",
+      "source_url": "https://support.hp.com/kr-ko/drivers/hp-officejet-pro-9120-all-in-one-series/model/2101420662",
+      "status": "Needs verification",
+      "reason": "BOUNDED_FETCH_UNAVAILABLE"
+    },
+    {
+      "vendor": "brother",
+      "model": "HL-B2180DW",
+      "source_url": "https://support.brother.com/g/b/downloadtop.aspx?c=kr&lang=ko&prod=hlb2180dw_as",
+      "final_url": "https://support.brother.com/g/b/downloadtop.aspx?c=kr&lang=ko&prod=hlb2180dw_as",
+      "http_status": 200,
+      "status": "Needs verification",
+      "exact_model_visible": false,
+      "download_content_visible": true,
+      "browser_required": false,
+      "content_sha256": "b946fc628ca5411fd0e83cebf3c6d26ae6bd1e5dd8d4d0a7d952022d7ca6e628",
+      "verified_at": null
+    },
+    {
+      "vendor": "mchose",
+      "source_url": "https://www.mchose.store/pages/download",
+      "status": "Needs verification",
+      "reason": "BOUNDED_FETCH_UNAVAILABLE"
+    },
+    {
+      "vendor": "vgn",
+      "source_url": "https://www.vgnlab.com/pages/download",
+      "final_url": "https://vgnlab.com/pages/download",
+      "http_status": 404,
+      "status": "Needs verification",
+      "exact_model_visible": false,
+      "download_content_visible": false,
+      "browser_required": false,
+      "content_sha256": "681c47e5f47a428c9d8714b88df101a6e2e603160119a6683346cb24b54ef3c7",
+      "verified_at": null
+    },
+    {
+      "vendor": "akko",
+      "source_url": "https://en.akkogear.com/download/",
+      "final_url": "https://en.akkogear.com/download/",
+      "http_status": 200,
+      "status": "Needs verification",
+      "exact_model_visible": false,
+      "download_content_visible": true,
+      "browser_required": false,
+      "content_sha256": "fc6690f31a80d3d712cc1a60c30db5c1a77110744e3834232d039f9152cdf34d",
+      "verified_at": null
+    },
+    {
+      "vendor": "asus",
+      "model": "PRIME A520M-K ARGB",
+      "source_url": "https://www.asus.com/motherboards-components/motherboards/prime/prime-a520m-k-argb/helpdesk_download?model2Name=PRIME-A520M-K-ARGB",
+      "final_url": "https://www.asus.com/motherboards-components/motherboards/prime/prime-a520m-k-argb/helpdesk_download?model2Name=PRIME-A520M-K-ARGB",
+      "http_status": 200,
+      "status": "Passed",
+      "exact_model_visible": true,
+      "download_content_visible": true,
+      "browser_required": false,
+      "content_sha256": "4ec932a2baafabc04fcccbaf6f6854a9707cf09c3e9a0e6b25ffbe96bbc078c9",
+      "verified_at": "2026-10-01"
+    },
+    {
+      "vendor": "canon",
+      "model": "PIXMA E3470",
+      "source_url": "https://asia.canon/en/support/PIXMA%20E3470/model",
+      "final_url": "https://asia.canon/en/support/PIXMA%20E3470/model",
+      "http_status": 200,
+      "status": "Passed",
+      "exact_model_visible": true,
+      "download_content_visible": true,
+      "browser_required": false,
+      "content_sha256": "a3879e3a60915e39344417dddf23c4eeb9538a4257ffdf3b63df119a66a592e8",
+      "verified_at": "2026-10-01"
+    }
+  ]
+}

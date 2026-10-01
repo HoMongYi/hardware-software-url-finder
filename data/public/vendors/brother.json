@@ -1,0 +1,37 @@
+{
+  "id": "brother",
+  "name": "Brother",
+  "aliases": [
+    "Brother"
+  ],
+  "domains": [
+    "support.brother.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "brother-printer",
+      "priority": 41.5,
+      "when": {
+        "brand_any": [
+          "^Brother$",
+          "^브라더$"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "support.brother.com"
+      ],
+      "url_patterns": [
+        "^https://support\\.brother\\.com/g/b/downloadtop\\.aspx\\?[^#]*prod=[a-z0-9_]+(?:&.*)?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

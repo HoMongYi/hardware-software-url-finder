@@ -1,0 +1,99 @@
+{
+  "id": "logitech",
+  "name": "Logitech",
+  "aliases": [
+    "Logitech",
+    "로지텍"
+  ],
+  "domains": [
+    "support.logi.com",
+    "www.logitech.com",
+    "www.logitechg.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.logitech.com/ko-kr/software/logi-options-plus",
+    "https://www.logitechg.com/ko-kr/software/ghub"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "logitech-g-gaming",
+      "priority": 30,
+      "when": {
+        "brand_any": [
+          "로지텍",
+          "^Logitech"
+        ],
+        "name_any": [
+          "로지텍\\s?G\\b",
+          "\\bG\\s?PRO\\b",
+          "\\bG\\d{3,4}\\b",
+          "게이밍",
+          "\\bASTRO\\b"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.logitechg.com",
+        "www.logitech.com",
+        "support.logi.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "logitech-g-gaming-software"
+    },
+    {
+      "id": "logitech-general",
+      "priority": 31,
+      "when": {
+        "brand_any": [
+          "로지텍",
+          "^Logitech"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.logitech.com",
+        "www.logitechg.com",
+        "support.logi.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "logitech-general-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "logitech-g-gaming-software",
+      "name": "logitech-g-gaming",
+      "canonical_page": "https://www.logitechg.com/ko-kr/software/ghub",
+      "support_mode": "family-rule",
+      "rule_id": "logitech-g-gaming",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.logitechg.com/ko-kr/software/ghub"
+      ],
+      "software_kind": "utility"
+    },
+    {
+      "id": "logitech-general-software",
+      "name": "logitech-general",
+      "canonical_page": "https://www.logitech.com/ko-kr/software/logi-options-plus",
+      "support_mode": "family-rule",
+      "rule_id": "logitech-general",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.logitech.com/ko-kr/software/logi-options-plus"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

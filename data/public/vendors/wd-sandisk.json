@@ -1,0 +1,70 @@
+{
+  "id": "wd-sandisk",
+  "name": "SanDisk",
+  "aliases": [
+    "SanDisk",
+    "WD",
+    "Western Digital",
+    "샌디스크"
+  ],
+  "domains": [
+    "support-en.sandisk.com",
+    "support-kr.sandisk.com",
+    "www.sandisk.com",
+    "www.westerndigital.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://support-en.sandisk.com/app/products/downloads/softwaredownloads"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "wd-sandisk-dashboard",
+      "priority": 48,
+      "when": {
+        "brand_any": [
+          "^WD\\b",
+          "^Western",
+          "^SanDisk",
+          "웨스턴디지털",
+          "샌디스크"
+        ],
+        "name_any": [
+          "\\bSSD\\b",
+          "\\bNVMe\\b",
+          "\\bSN\\d{3,4}\\b"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "support-en.sandisk.com",
+        "support-kr.sandisk.com",
+        "www.sandisk.com",
+        "www.westerndigital.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "wd-sandisk-dashboard-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "wd-sandisk-dashboard-software",
+      "name": "wd-sandisk-dashboard",
+      "canonical_page": "https://support-en.sandisk.com/app/products/downloads/softwaredownloads",
+      "support_mode": "family-rule",
+      "rule_id": "wd-sandisk-dashboard",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://support-en.sandisk.com/app/products/downloads/softwaredownloads"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

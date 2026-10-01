@@ -1,0 +1,22 @@
+version: 1
+name: serpapi-openai-judge
+resolution:
+  registry_first: true
+  deduplicate_normalized_products: true
+  research_unresolved_only: true
+search:
+  provider: serpapi
+  max_raw_results: 20
+  candidate_limit_after_scoring: 5
+judge:
+  provider: openai
+  enabled: auto
+  model_env: OPENAI_MODEL
+  structured_output: true
+audit:
+  final_core_audit_required: true
+  reject_marketplaces: true
+  reject_community: true
+  reject_direct_files: true
+output:
+  format: json

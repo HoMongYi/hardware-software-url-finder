@@ -1,0 +1,37 @@
+{
+  "id": "huion",
+  "name": "Huion",
+  "aliases": [
+    "Huion"
+  ],
+  "domains": [
+    "www.huion.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "huion-tablet",
+      "priority": 46,
+      "when": {
+        "brand_any": [
+          "^HUION",
+          "휴이온"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.huion.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.huion\\.com/download(/.+)?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

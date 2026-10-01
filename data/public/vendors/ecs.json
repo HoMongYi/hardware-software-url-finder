@@ -1,0 +1,36 @@
+{
+  "id": "ecs",
+  "name": "ECS",
+  "aliases": [
+    "ECS"
+  ],
+  "domains": [
+    "www.ecs.com.tw"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "ecs",
+      "priority": 60,
+      "when": {
+        "brand_any": [
+          "^ECS"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.ecs.com.tw"
+      ],
+      "url_patterns": [
+        "^https://www\\.ecs\\.com\\.tw/(kr|en)/Product/Motherboard/[^/]+/download$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

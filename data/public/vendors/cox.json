@@ -1,0 +1,52 @@
+{
+  "id": "cox",
+  "name": "COX",
+  "aliases": [
+    "COX"
+  ],
+  "domains": [
+    "www.coxenc.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.coxenc.co.kr/support/download.php"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "cox",
+      "priority": 53,
+      "when": {
+        "brand_any": [
+          "^COX"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.coxenc.co.kr"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "cox-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "cox-software",
+      "name": "cox",
+      "canonical_page": "https://www.coxenc.co.kr/support/download.php",
+      "support_mode": "family-rule",
+      "rule_id": "cox",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.coxenc.co.kr/support/download.php"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "tryx",
+  "name": "TRYX",
+  "aliases": [
+    "TRYX"
+  ],
+  "domains": [
+    "www.tryx.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.tryx.com/en/kanali"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "tryx-kanali",
+      "priority": 69,
+      "when": {
+        "brand_any": [
+          "^TRYX$"
+        ],
+        "name_any": [
+          "PANORAMA"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.tryx.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "tryx-kanali-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "tryx-kanali-software",
+      "name": "tryx-kanali",
+      "canonical_page": "https://www.tryx.com/en/kanali",
+      "support_mode": "family-rule",
+      "rule_id": "tryx-kanali",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.tryx.com/en/kanali"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "turtlebeach",
+  "name": "Turtle Beach",
+  "aliases": [
+    "Turtle Beach"
+  ],
+  "domains": [
+    "support.roccat.com",
+    "support.turtlebeach.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "turtlebeach-roccat",
+      "priority": 64,
+      "when": {
+        "brand_any": [
+          "^ROCCAT",
+          "^Turtle",
+          "터틀비치"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "support.turtlebeach.com",
+        "support.roccat.com"
+      ],
+      "url_patterns": [
+        "^https://support\\.turtlebeach\\.com/s/downloads\\?language=ko.*",
+        "^https://support\\.roccat\\.com/s/article/.+"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

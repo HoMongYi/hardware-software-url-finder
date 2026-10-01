@@ -1,0 +1,53 @@
+{
+  "id": "pulsar",
+  "name": "Pulsar",
+  "aliases": [
+    "Pulsar"
+  ],
+  "domains": [
+    "www.pulsar.gg"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.pulsar.gg/pages/download"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "pulsar",
+      "priority": 56,
+      "when": {
+        "brand_any": [
+          "^pulsar",
+          "펄사"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.pulsar.gg"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "pulsar-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "pulsar-software",
+      "name": "pulsar",
+      "canonical_page": "https://www.pulsar.gg/pages/download",
+      "support_mode": "family-rule",
+      "rule_id": "pulsar",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.pulsar.gg/pages/download"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

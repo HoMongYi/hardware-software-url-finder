@@ -1,0 +1,95 @@
+{
+  "version": "0.1.0",
+  "verified_at": "2026-10-02",
+  "repository": "https://github.com/HoMongYi/hardware-software-url-finder",
+  "environment": {
+    "os": "Windows",
+    "node": "v24.13.1",
+    "python": "3.11.9"
+  },
+  "baseline": {
+    "status": "Passed",
+    "golden": {
+      "pass": 104,
+      "fail": 0,
+      "skip": 0
+    },
+    "integrity": {
+      "pass": 4,
+      "fail": 0,
+      "skip": 0
+    }
+  },
+  "deterministic": {
+    "status": "Passed",
+    "pass": 130,
+    "fail": 0,
+    "skip": 0
+  },
+  "optional_live": {
+    "status": "Not run",
+    "reason": "credentials/environment not available; paid execution not enabled",
+    "pass": 0,
+    "fail": 0,
+    "skip": 3
+  },
+  "total": {
+    "pass": 238,
+    "fail": 0,
+    "skip": 3
+  },
+  "registry": {
+    "version": "0.1.0",
+    "vendors": 51,
+    "domains": 85,
+    "models": 2,
+    "aliases": 0,
+    "rules": 58,
+    "ecosystems": 24,
+    "needs_refresh": 24,
+    "private_overlay_enabled": false
+  },
+  "security": {
+    "status": "Passed",
+    "files": 138,
+    "findings": [],
+    "runtime_dependency_advisories": 0
+  },
+  "plugin": {
+    "status": "Passed",
+    "manifest_schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "canonical_skill_sha256": "c02c5e9253c10aac0f65e2b2fad1a10ca0e1eaaacee823bb0e4059314be5cfc3",
+    "runtime_entry": "runtime/bin/hsuf.mjs"
+  },
+  "skill": {
+    "official_validator": "skills-ref 0.1.0",
+    "status": "Passed"
+  },
+  "interfaces": {
+    "cli": "Passed",
+    "csv": "Passed",
+    "http": "Passed",
+    "mcp_official_client_stdio": "Passed",
+    "readme_examples": "Passed"
+  },
+  "artifacts": {
+    "zip_crc_and_allowlist": "Passed",
+    "source_layout": "flat",
+    "license_in_all_packages": "MIT",
+    "sha256_and_sizes": "Passed",
+    "npm_install_smoke": "Passed",
+    "plugin_runtime_install_smoke": "Passed"
+  },
+  "not_run": [
+    "paid provider live requests — credentials/environment not available",
+    "GitHub hosted CI — unpublished environment",
+    "Codex/Claude host UI installation — host environment not tested",
+    "Claude API Skill upload — credentials/environment not available",
+    "Linux/Node22 runtime execution — environment not available",
+    "GitHub push/public release — not authorized",
+    "npm publish — out of scope"
+  ],
+  "license": "MIT",
+  "source_catalogue_mappings_held": 1549,
+  "source_regional_aliases_held": 31
+}

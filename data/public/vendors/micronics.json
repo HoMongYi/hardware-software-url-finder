@@ -1,0 +1,38 @@
+{
+  "id": "micronics",
+  "name": "Micronics",
+  "aliases": [
+    "Micronics",
+    "마이크로닉스"
+  ],
+  "domains": [
+    "www.micronics.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "micronics",
+      "priority": 58,
+      "when": {
+        "brand_any": [
+          "마이크로닉스",
+          "^MICRONICS"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.micronics.co.kr"
+      ],
+      "url_patterns": [
+        "^https://www\\.micronics\\.co\\.kr/micronics/view_download\\.php\\?id=\\d+$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

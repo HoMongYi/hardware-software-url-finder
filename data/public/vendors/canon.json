@@ -1,0 +1,55 @@
+{
+  "id": "canon",
+  "name": "Canon",
+  "aliases": [
+    "Canon",
+    "캐논"
+  ],
+  "domains": [
+    "asia.canon"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [
+    {
+      "id": "canon-pixma-e3470",
+      "model": "PIXMA E3470",
+      "canonical_page": "https://asia.canon/en/support/PIXMA%20E3470/model",
+      "status": "active",
+      "verified_at": "2026-10-01",
+      "provenance": [
+        "https://asia.canon/en/support/PIXMA%20E3470/model"
+      ],
+      "support_mode": "exact",
+      "supported_models": [
+        "PIXMA E3470"
+      ],
+      "excluded_models": [],
+      "software_kind": "support"
+    }
+  ],
+  "rules": [
+    {
+      "id": "canon-printer",
+      "priority": 42,
+      "when": {
+        "brand_any": [
+          "^Canon",
+          "캐논"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "asia.canon"
+      ],
+      "url_patterns": [
+        "^https://asia\\.canon/en/support/.+/model$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

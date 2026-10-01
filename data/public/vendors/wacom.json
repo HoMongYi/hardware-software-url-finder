@@ -1,0 +1,38 @@
+{
+  "id": "wacom",
+  "name": "Wacom",
+  "aliases": [
+    "Wacom"
+  ],
+  "domains": [
+    "www.wacom.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "wacom-tablet",
+      "priority": 45,
+      "when": {
+        "brand_any": [
+          "^Wacom",
+          "와콤"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.wacom.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.wacom\\.com/(ko-kr|en-us)/support/product-support/drivers.*",
+        "^https://www\\.wacom\\.com/ko-kr/support.*"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

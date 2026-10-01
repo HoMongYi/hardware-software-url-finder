@@ -1,0 +1,30 @@
+{
+  "markers": [
+    {
+      "id": "hyperx-under-hp",
+      "canonical_brand": "HyperX",
+      "name_any": [
+        "하이퍼엑스",
+        "\\bHYPERX\\b",
+        "\\bPULSEFIRE\\b",
+        "\\bALLOY\\s+(ORIGINS|RISE)\\b"
+      ]
+    },
+    {
+      "id": "rapoo-under-distributor",
+      "canonical_brand": "Rapoo",
+      "name_any": [
+        "\\bRAPOO\\b",
+        "라푸"
+      ]
+    },
+    {
+      "id": "fl-esports-spelling",
+      "canonical_brand": "FL-ESPORTS",
+      "name_any": [
+        "\\bFL[- ]?ESPORTS\\b",
+        "\\bFLESPORTS\\b"
+      ]
+    }
+  ]
+}

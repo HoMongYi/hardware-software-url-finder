@@ -1,0 +1,52 @@
+{
+  "id": "asrock",
+  "name": "ASRock",
+  "aliases": [
+    "ASRock"
+  ],
+  "domains": [
+    "asrock.com",
+    "asrockind.com",
+    "asrockrack.com",
+    "pg.asrock.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "asrock-motherboard",
+      "priority": 22,
+      "when": {
+        "brand_any": [
+          "^ASRock"
+        ],
+        "name_none": [
+          "지포스",
+          "GeForce",
+          "RTX",
+          "라데온",
+          "Radeon"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "asrock.com",
+        "pg.asrock.com",
+        "asrockrack.com",
+        "asrockind.com"
+      ],
+      "url_patterns": [
+        "^https://(www\\.|pg\\.)?asrock\\.com/[Mm][Bb]/(Intel|AMD)/.+/index(\\.kr)?\\.asp(#Download)?$"
+      ],
+      "forbid_url_regex": [
+        "download\\.asrock\\.com/Manual"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

@@ -1,0 +1,46 @@
+{
+  "baseline_cases": 104,
+  "source_case_types": {
+    "lookup": 60,
+    "audit": 34,
+    "rank": 6,
+    "discriminator": 1,
+    "lookup_fixture": 1,
+    "normalize": 2
+  },
+  "after_observed_decisions": {
+    "review": 50,
+    "blank": 10,
+    "audit_review": 34
+  },
+  "policy_change_reasons": {
+    "LEGACY_CATALOGUE_ID_ONLY": 1,
+    "LIFECYCLE_NEEDS_REFRESH": 17,
+    "REGISTRY_MISS": 8,
+    "shared_new_contract_regression_tests": 9
+  },
+  "classification": "aggregate-only; no catalogue inputs persisted",
+  "legacy_runs": {
+    "golden": {
+      "status": "Passed",
+      "pass": 104,
+      "fail": 0,
+      "skip": 0
+    },
+    "integrity": {
+      "status": "Passed",
+      "pass": 4,
+      "fail": 0,
+      "skip": 0
+    }
+  },
+  "intentional_changes": [
+    "no input_id lookup into company catalogue",
+    "public provenance required before exact reuse",
+    "unverified regional aliases withheld",
+    "lifecycle dates not invented",
+    "no candidate or blocked search becomes blank",
+    "static URL audit without page proof is review",
+    "no global noise deletion"
+  ]
+}

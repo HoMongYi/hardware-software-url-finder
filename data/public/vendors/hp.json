@@ -1,0 +1,37 @@
+{
+  "id": "hp",
+  "name": "HP",
+  "aliases": [
+    "HP",
+    "HP"
+  ],
+  "domains": [
+    "support.hp.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "hp-printer-and-device",
+      "priority": 40,
+      "when": {
+        "brand_any": [
+          "^HP"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "support.hp.com"
+      ],
+      "url_patterns": [
+        "^https://support\\.hp\\.com/kr-ko/drivers/[a-z0-9-]+(/model)?/\\d+$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

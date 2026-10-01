@@ -1,0 +1,89 @@
+{
+  "id": "corsair",
+  "name": "Corsair",
+  "aliases": [
+    "Corsair"
+  ],
+  "domains": [
+    "www.corsair.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.corsair.com/kr/ko/s/downloads",
+    "https://www.corsair.com/kr/ko/s/icue"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "corsair-icue-device",
+      "priority": 33,
+      "when": {
+        "name_any": [
+          "iCUE",
+          "\\bICUE\\b"
+        ],
+        "brand_any": [
+          "^CORSAIR",
+          "커세어"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.corsair.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "corsair-icue-device-software"
+    },
+    {
+      "id": "corsair-general",
+      "priority": 34,
+      "when": {
+        "brand_any": [
+          "^CORSAIR",
+          "커세어"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.corsair.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "corsair-general-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "corsair-icue-device-software",
+      "name": "corsair-icue-device",
+      "canonical_page": "https://www.corsair.com/kr/ko/s/icue",
+      "support_mode": "family-rule",
+      "rule_id": "corsair-icue-device",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.corsair.com/kr/ko/s/icue"
+      ],
+      "software_kind": "utility"
+    },
+    {
+      "id": "corsair-general-software",
+      "name": "corsair-general",
+      "canonical_page": "https://www.corsair.com/kr/ko/s/downloads",
+      "support_mode": "family-rule",
+      "rule_id": "corsair-general",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.corsair.com/kr/ko/s/downloads"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

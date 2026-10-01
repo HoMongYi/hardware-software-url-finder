@@ -1,0 +1,52 @@
+{
+  "id": "3dconnexion",
+  "name": "3Dconnexion",
+  "aliases": [
+    "3Dconnexion"
+  ],
+  "domains": [
+    "3dconnexion.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://3dconnexion.com/kr/drivers-application/3dxware-10/"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "3dconnexion",
+      "priority": 57,
+      "when": {
+        "brand_any": [
+          "3DCONNEXION"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "3dconnexion.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "3dconnexion-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "3dconnexion-software",
+      "name": "3dconnexion",
+      "canonical_page": "https://3dconnexion.com/kr/drivers-application/3dxware-10/",
+      "support_mode": "family-rule",
+      "rule_id": "3dconnexion",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://3dconnexion.com/kr/drivers-application/3dxware-10/"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

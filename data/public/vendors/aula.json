@@ -1,0 +1,44 @@
+{
+  "id": "aula",
+  "name": "AULA",
+  "aliases": [
+    "AULA",
+    "독거미"
+  ],
+  "domains": [
+    "aulakeyboard.com",
+    "funkeys.co.kr"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "aula",
+      "priority": 51,
+      "when": {
+        "brand_any": [
+          "^AULA",
+          "^독거미"
+        ],
+        "name_any": [
+          "."
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "aulakeyboard.com",
+        "funkeys.co.kr"
+      ],
+      "url_patterns": [
+        "^https://aulakeyboard\\.com/ko/download/.+",
+        "^https://funkeys\\.co\\.kr/bbs/board\\.php\\?(?=[^#]*bo_table=download(?:&|$))[^#]*wr_id=\\d+(?:&.*)?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

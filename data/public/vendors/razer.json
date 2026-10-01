@@ -1,0 +1,54 @@
+{
+  "id": "razer",
+  "name": "Razer",
+  "aliases": [
+    "Razer",
+    "레이저"
+  ],
+  "domains": [
+    "www.razer.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [
+    "https://www.razer.com/kr-kr/synapse-4"
+  ],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "razer",
+      "priority": 32,
+      "when": {
+        "brand_any": [
+          "^RAZER",
+          "레이저"
+        ]
+      },
+      "action": "ecosystem",
+      "allowed_domains": [
+        "www.razer.com"
+      ],
+      "allow_hub": false,
+      "ecosystem_id": "razer-software"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "razer-software",
+      "name": "razer",
+      "canonical_page": "https://www.razer.com/kr-kr/synapse-4",
+      "support_mode": "family-rule",
+      "rule_id": "razer",
+      "supported_models": [],
+      "excluded_models": [],
+      "status": "needs-refresh",
+      "verified_at": null,
+      "provenance": [
+        "https://www.razer.com/kr-kr/synapse-4"
+      ],
+      "software_kind": "utility"
+    }
+  ]
+}

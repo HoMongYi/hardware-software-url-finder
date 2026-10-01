@@ -1,0 +1,62 @@
+{
+  "id": "hub-only",
+  "name": "Multi-vendor download hubs",
+  "aliases": [
+    "Multi-vendor download hubs",
+    "darkFlash",
+    "다크플래시",
+    "A4TECH",
+    "Bloody",
+    "EVGA",
+    "Xtrfy",
+    "엑스트리파이"
+  ],
+  "domains": [
+    "cherryxtrfy.com",
+    "www.a4tech.com",
+    "www.bloody.com",
+    "www.cherry.de",
+    "www.darkflash.com",
+    "www.evga.com"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "hub-only-brands",
+      "priority": 70,
+      "when": {
+        "brand_any": [
+          "^darkFlash",
+          "^다크플래시",
+          "^A4TECH",
+          "^Bloody",
+          "^EVGA",
+          "^Xtrfy",
+          "엑스트리파이"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.darkflash.com",
+        "www.bloody.com",
+        "www.evga.com",
+        "cherryxtrfy.com",
+        "www.a4tech.com",
+        "www.cherry.de"
+      ],
+      "url_patterns": [
+        "^https://www\\.darkflash\\.com/[a-z]{2}/driver/?$",
+        "^https://www\\.bloody\\.com/[a-z]{2}/download\\.php$",
+        "^https://www\\.evga\\.com/support/download/?$",
+        "^https://cherryxtrfy\\.com/downloads/?$"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}

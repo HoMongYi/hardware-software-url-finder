@@ -1,0 +1,38 @@
+{
+  "id": "biostar",
+  "name": "Biostar",
+  "aliases": [
+    "Biostar"
+  ],
+  "domains": [
+    "www.biostar-europe.com",
+    "www.biostar.com.tw"
+  ],
+  "classification": "PUBLIC_SOURCE_ONLY",
+  "provenance": [],
+  "verified_at": null,
+  "noise_tokens": [],
+  "model_aliases": [],
+  "models": [],
+  "rules": [
+    {
+      "id": "biostar",
+      "priority": 61,
+      "when": {
+        "brand_any": [
+          "^BIOSTAR"
+        ]
+      },
+      "action": "model_page",
+      "allowed_domains": [
+        "www.biostar.com.tw",
+        "www.biostar-europe.com"
+      ],
+      "url_patterns": [
+        "^https://www\\.biostar\\.com\\.tw/app/(kr|en)/mb/introduction\\.php\\?S_ID=\\d+"
+      ],
+      "allow_hub": false
+    }
+  ],
+  "ecosystems": []
+}
