@@ -12,7 +12,7 @@
   "exports": { ".": "./src/index.mjs" },
   "files": ["bin", "src", "data/public", "schemas", "config", "skills", "examples", "docs", "reports/migration.json", "reports/legacy-comparison.json", "reports/public-source-refresh.json", "reports/verification.json", "reports/FINAL_REPORT.md", "reports/RELEASE_NOTES_v0.1.0.md", "README.md", "SECURITY.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE", "LICENSE-DECISION.md"],
   "scripts": {
-    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
     "registry:build": "node scripts/build-registry.mjs",
     "validate": "node scripts/validate.mjs",
     "release:build": "node scripts/release.mjs",
