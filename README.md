@@ -4,7 +4,7 @@
 
 HSUF는 제품 이름으로 공식 소프트웨어 URL을 찾아 판정하는 범용 Node.js 엔진입니다. 실제 PC 유통·고객지원 업무에서 반복되는 URL 확인 문제를 줄이기 위해 시작한 개인 오픈소스 프로젝트입니다. 특정 회사의 공식 제품이나 사내 시스템이 아닙니다. 먼저 Registry를 보고, 필요한 경우에만 검색합니다. AI를 쓰더라도 후보 비교까지만 맡기고, 마지막 URL은 Core가 따로 확인합니다.
 
-**v0.1.0**은 최초 공개 버전이며 [MIT License](LICENSE)로 제공합니다. 저장소는 [HoMongYi/hardware-software-url-finder](https://github.com/HoMongYi/hardware-software-url-finder)입니다. 현재 산출물은 공개 직전 최종 후보로, GitHub와 npm publish는 실행하지 않았습니다.
+**v0.1.0**은 최초 공개 버전이며 [MIT License](LICENSE)로 제공합니다. 저장소는 [HoMongYi/hardware-software-url-finder](https://github.com/HoMongYi/hardware-software-url-finder)입니다. Source와 Skill/Plugin 패키지는 GitHub Release Asset으로 제공합니다. npm registry에는 publish하지 않습니다.
 
 ```text
 Catalog / CSV / Agent
@@ -232,7 +232,7 @@ SSRF, DNS의 private IP, 리다이렉트, direct binary, prompt injection을 테
 
 기존 v2.2.1 baseline은 104 golden + 4 integrity 테스트가 통과했습니다. 공개 Registry에는 현재 Vendor 51개, 도메인 85개, 규칙 58개, Ecosystem 24개와 독립 검증한 exact record 2개가 있습니다. Ecosystem 24개는 `needs-refresh`이며 아직 자동 fill하지 않습니다. 원본 상품번호 매핑 1,549행과 지역 별칭 31개는 공개 권한/호환 근거가 확인되지 않아 보류했습니다. 원본은 공개 패키지에 없습니다.
 
-단순 버전 변경으로 모든 기존 매핑이 “공개 검증 완료”가 됐다고 주장하지 않습니다. 정확한 Registry를 늘리려면 공식 호환 근거를 하나씩 확인해야 합니다. OpenAI Web Search unified adapter는 이번 버전에 넣지 않았습니다. paid Provider 실호출, Agent host UI 설치, 다른 OS 실행은 별도 검증 항목입니다.
+단순 버전 변경으로 모든 기존 매핑이 “공개 검증 완료”가 됐다고 주장하지 않습니다. 정확한 Registry를 늘리려면 공식 호환 근거를 하나씩 확인해야 합니다. OpenAI Web Search unified adapter는 이번 버전에 넣지 않았습니다. paid Provider 실호출과 Agent host UI 설치는 별도 검증 항목입니다. [GitHub Actions](https://github.com/HoMongYi/hardware-software-url-finder/actions/runs/36897853577)에서 Ubuntu/Windows × Node 22/24의 deterministic 테스트·Registry·패키징·Skill 검증을 모두 통과했습니다.
 
 ```bash
 npm test

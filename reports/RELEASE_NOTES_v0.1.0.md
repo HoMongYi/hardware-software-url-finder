@@ -28,9 +28,9 @@ active exact model은 ASUS PRIME A520M-K ARGB와 Canon PIXMA E3470입니다. 기
 
 ## 검증
 
-최종 합계는 **238 PASS / 0 FAIL / 3 SKIP**입니다. 원본 golden 104 + integrity 4, 공개 deterministic 130이며 유료 3개는 실행 조건이 없어 SKIP했습니다. 최종 실행 결과는 [FINAL_REPORT](FINAL_REPORT.md)와 [verification.json](verification.json)을 참고하세요. CLI/CSV/HTTP/MCP와 Provider Mock/Contract 테스트, 공개 파일·secret 검사, ZIP CRC 및 SHA-256를 확인했습니다.
+최종 합계는 **238 PASS / 0 FAIL / 3 SKIP**입니다. 원본 golden 104 + integrity 4, 공개 deterministic 130이며 유료 3개는 실행 조건이 없어 SKIP했습니다. 최종 실행 결과는 [FINAL_REPORT](https://github.com/HoMongYi/hardware-software-url-finder/blob/v0.1.0/reports/FINAL_REPORT.md)와 [verification.json](https://github.com/HoMongYi/hardware-software-url-finder/blob/v0.1.0/reports/verification.json)을 참고하세요. CLI/CSV/HTTP/MCP와 Provider Mock/Contract 테스트, 공개 파일·secret 검사, ZIP CRC 및 SHA-256를 확인했습니다.
 
-실제 유료 SerpAPI/OpenAI 호출, Claude API Skill Upload, Codex/Claude UI 설치와 GitHub Hosted CI는 **Not run — credentials/environment not available**입니다. Linux/Node 22 실행도 hosted CI 확인 전입니다.
+실제 유료 SerpAPI/OpenAI 호출, Claude API Skill Upload, Codex/Claude UI 설치는 **Not run — credentials/environment not available**입니다. [GitHub Hosted CI](https://github.com/HoMongYi/hardware-software-url-finder/actions/runs/36897853577)의 Ubuntu/Windows × Node 22/24 네 조합은 모두 **Passed**입니다. 각 조합에서 deterministic 130개와 Registry·Release Packaging·Skill 검증을 통과했습니다. 최초 Node 22 테스트 옵션 오류는 호환되는 테스트 실행 명령으로 수정했습니다.
 
 ## Release Assets
 

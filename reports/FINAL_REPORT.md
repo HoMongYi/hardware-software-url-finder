@@ -1,6 +1,6 @@
 # HSUF v0.1.0 Final Report
 
-작업 결과는 2026-10-02 기준 MIT 라이선스의 최초 공개판 v0.1.0 최종 후보입니다. 대상 저장소는 https://github.com/HoMongYi/hardware-software-url-finder 입니다. GitHub push, Public Release publish, npm publish, 회사 내부 데이터 공개는 하지 않았습니다. 기존 공개 Source ZIP만 별도 디렉터리에 풀어 작업했고 원본 개발 workspace와 v2.2.1 baseline은 보존했습니다.
+다음은 2026-10-02의 공개 전 로컬 검증 기록이며, 실제 GitHub 배포 검증은 마지막 절에 기록했습니다. 프로젝트는 MIT 라이선스의 최초 공개판 v0.1.0입니다. 대상 저장소는 https://github.com/HoMongYi/hardware-software-url-finder 입니다. GitHub push, Public Release publish, npm publish, 회사 내부 데이터 공개는 하지 않았습니다. 기존 공개 Source ZIP만 별도 디렉터리에 풀어 작업했고 원본 개발 workspace와 v2.2.1 baseline은 보존했습니다.
 
 ## 1. v2.2.1 baseline
 
@@ -171,3 +171,17 @@ ZIP CRC/경로/private 제외 검사 **Passed**. 최종 bytes/hash는 self-refer
 - [ ] npm publish는 이번 작업 범위에 포함하지 않는다.
 
 공개 절차와 Asset 선택은 docs/PUBLISHING.md를 참고하세요. 실제 GitHub/npm publish는 실행하지 않았습니다.
+
+## GitHub deployment verification — 2026-10-02
+
+Maintainer가 main push, v0.1.0 annotated Tag 및 Public Release publish를 승인했습니다. npm publish와 회사 내부 데이터 공개는 승인 범위에 포함하지 않습니다.
+
+- 최초 공개 main commit: c7076bfa156c25284e8cc3a55715e07ff9a92cdb.
+- 최초 CI는 Node 22에서 --test-isolation=none을 지원하지 않아 실패했습니다. Node 24의 전체 검증 단계는 통과했지만 matrix fail-fast로 작업이 취소됐습니다. 이 결과를 공개 전 통과로 숨기지 않았습니다.
+- 수정 commit: e3148fe3d260cfb59750f631995319a40422ecd8. 테스트 명령을 node --test --test-concurrency=1 tests/*.test.mjs로 변경하고 matrix fail-fast를 껐습니다. 테스트를 삭제하거나 Node 22 지원을 포기하지 않았습니다.
+- 수정 후 Windows 로컬 deterministic130 PASS/0FAIL. Hosted CI의 Ubuntu/Windows × Node22/24 네 조합 모두 Passed; Registry compile/validate, Release Packaging, 공식 Skill validator와 archive/hash audit도 모두 Passed.
+- CI: https://github.com/HoMongYi/hardware-software-url-finder/actions/runs/36897853577
+- main에서 README가 HTML로 정상 렌더링되고 GitHub가 MIT License를 인식함을 API로 확인했습니다.
+- 코드 수정이 들어간 Source/Skill/Plugin/npm Artifact는 배포 전에 다시 생성하고 checksum·size·누출 검사를 실행합니다. 이전 패키징 manifest의 publish 상태는 생성 시점의 기록이며 실제 공개 상태는 GitHub Release API가 기준입니다.
+- 이 절 이전의 Hosted CI Not run과 publish Not run 표기는 공개 전 검증 시점의 기록입니다. 유료 호출 3 SKIP, Claude Skill upload, Agent UI 미실행과 needs-refresh/보류 데이터는 그대로 유지합니다.
+- Tag/Release 완료 여부와 최종 Git SHA·Asset digest는 배포 마지막 확인에서 별도로 확인합니다. Repository의 이후 문서 수정까지 포함한 최종 main CI도 통과한 뒤에만 Tag를 만듭니다.

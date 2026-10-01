@@ -82,14 +82,29 @@
   },
   "not_run": [
     "paid provider live requests — credentials/environment not available",
-    "GitHub hosted CI — unpublished environment",
     "Codex/Claude host UI installation — host environment not tested",
     "Claude API Skill upload — credentials/environment not available",
-    "Linux/Node22 runtime execution — environment not available",
-    "GitHub push/public release — not authorized",
     "npm publish — out of scope"
   ],
   "license": "MIT",
   "source_catalogue_mappings_held": 1549,
-  "source_regional_aliases_held": 31
+  "source_regional_aliases_held": 31,
+  "hosted_ci": {
+    "status": "Passed",
+    "url": "https://github.com/HoMongYi/hardware-software-url-finder/actions/runs/36897853577",
+    "tested_commit": "e3148fe3d260cfb59750f631995319a40422ecd8",
+    "matrix": [
+      "ubuntu-latest / Node 22",
+      "ubuntu-latest / Node 24",
+      "windows-latest / Node 22",
+      "windows-latest / Node 24"
+    ],
+    "deterministic_per_job": 130,
+    "initial_failure": "Node 22 unsupported --test-isolation=none; fixed by compatible runner command"
+  },
+  "publication": {
+    "main_push": "Passed",
+    "tag_and_release": "performed after final main CI; GitHub API is authoritative",
+    "npm_publish": "Not run — prohibited"
+  }
 }
